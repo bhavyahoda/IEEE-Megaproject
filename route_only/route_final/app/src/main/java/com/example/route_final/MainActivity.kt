@@ -44,9 +44,12 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback {
                 val entry = it.getJSONObject(i)
                 val lat = entry.getDouble("Lat")
                 val lon = entry.getDouble("Long")
-                val density= 1.0
+                val density= Random.nextDouble(1.0,9.0)
+		if(density!=0.0)
+		{
                     val weightedLatLng = WeightedLatLng(LatLng(lat, lon), density)
                     data.add(weightedLatLng)
+		}	
             }
         }
 
