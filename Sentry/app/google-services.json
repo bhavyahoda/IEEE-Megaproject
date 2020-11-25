@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "677536097918",
+    "firebase_url": "https://sentry-a81ee.firebaseio.com",
+    "project_id": "sentry-a81ee",
+    "storage_bucket": "sentry-a81ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677536097918:android:74cfd1b01dd6f956d65a2f",
+        "android_client_info": {
+          "package_name": "com.example.sentry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677536097918-ebjbmjfa02hs4id85k8i7rn9953duas9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkeIbZw5JVfzHdSiTeGcekbRxYvNiz2SU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677536097918-ebjbmjfa02hs4id85k8i7rn9953duas9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
