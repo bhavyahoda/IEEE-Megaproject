@@ -1,6 +1,5 @@
 package com.example.sentry;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -10,18 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.FirebaseAuth;
-
 public class Dashboard extends AppCompatActivity {
-    Button logout;
+    Button logout,heatmap,sos_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        logout=findViewById(R.id.logout);
+        logout = findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -32,6 +26,24 @@ public class Dashboard extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
                 finish();
+            }
+        });
+        heatmap = findViewById(R.id.Heatmap);
+        heatmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),HeatMap.class);
+                //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
+                startActivity(intent);
+            }
+        });
+        sos_button = findViewById(R.id.SOS);
+        sos_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),ContactAdder.class);
+                //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
+                startActivity(intent);
             }
         });
     }
