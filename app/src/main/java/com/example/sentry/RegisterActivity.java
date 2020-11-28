@@ -116,6 +116,12 @@ public class RegisterActivity extends AppCompatActivity {
                             });
 
                             // if the user created intent to login activity
+                            firstNameTextView.setText("");
+                            lastNameTextView.setText("");
+                            ageTextView.setText("");
+                            emailTextView.setText("");
+                            passwordTextView.setText("");
+                            phoneTextView.setText("");
                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                             startActivity(intent);
                         }
@@ -123,6 +129,12 @@ public class RegisterActivity extends AppCompatActivity {
 
                             // Registration failed
                             Toast.makeText(getApplicationContext(), "Registration failed" + " or existing user.", Toast.LENGTH_LONG).show();
+                            firstNameTextView.setText("");
+                            lastNameTextView.setText("");
+                            ageTextView.setText("");
+                            emailTextView.setText("");
+                            passwordTextView.setText("");
+                            phoneTextView.setText("");
 
                         }
                     }

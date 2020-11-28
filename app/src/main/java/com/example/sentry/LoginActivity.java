@@ -74,6 +74,8 @@ public class LoginActivity extends AppCompatActivity {
 
                                     // if sign-in is successful
                                     // intent to home activity
+                                    usernameTextView.setText("");
+                                    passwordTextView.setText("");
                                     Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                                     startActivity(intent);
                                 }
@@ -82,6 +84,8 @@ public class LoginActivity extends AppCompatActivity {
 
                                     // sign-in failed
                                     Toast.makeText(getApplicationContext(), "Login failed!!", Toast.LENGTH_LONG).show();
+                                    usernameTextView.setText("");
+                                    passwordTextView.setText("");
                                 }
                             }
                         });
