@@ -11,4 +11,5 @@
 
 6. In the cdda136 commit the space for phone number to send the location to has been left blank, will add another activity in the next commits.
 
+7. idk_now=(India_Direction_Knowledge) this subclass shows the nearby hospitals, police station, fire station from our current location.
 
