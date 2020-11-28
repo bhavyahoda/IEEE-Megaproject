@@ -5,8 +5,10 @@
 
 3. Screenshots of the app will be added in the next week.
 
-4.The name of the app is "Sentry", and it is added to the layout .
+4. The name of the app is "Sentry", and it is added to the layout .
 
-5.UI changes will be done in the following weeks.
+5. UI changes will be done in the following weeks.
+
+6. In the cdda136 commit the space for phone number to send the location to has been left blank, will add another activity in the next commits.
 
 
