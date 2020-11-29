@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Database">
+
+    <Button
+        android:id="@+id/law_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="80dp"
+        android:text="Law info"
+        app:layout_constraintBottom_toTopOf="@+id/counselling"
+        app:layout_constraintEnd_toStartOf="@+id/self_defense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/anonymous_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="108dp"
+        android:text="anonymous tips"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counselling" />
+
+    <Button
+        android:id="@+id/hotel_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="158dp"
+        android:text="Hotel info "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anonymous_tips" />
+
+    <Button
+        android:id="@+id/counselling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="80dp"
+        android:text="Counselling awareness"
+        app:layout_constraintBottom_toTopOf="@+id/anonymous_tips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/law_info" />
+
+
+    <Button
+        android:id="@+id/self_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="80dp"
+        android:text="Self defense"
+        app:layout_constraintBottom_toTopOf="@+id/counselling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/law_info"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

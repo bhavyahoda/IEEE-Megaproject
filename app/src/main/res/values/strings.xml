@@ -1,3 +1,88 @@
 <resources>
     <string name="app_name">Sentry</string>
+    <string-array name="Section_code_number">
+        <item>Section 229</item>
+        <item>Section 300</item>
+        <item>Section 304B</item>
+        <item>Section 306</item>
+        <item>Section 316</item>
+        <item>Section 020</item>
+        <item>Section 322</item>
+        <item>Section 323</item>
+        <item>Section 339</item>
+        <item>Section 340</item>
+        <item>Section 346</item>
+        <item>Section 347</item>
+        <item>Section 349</item>
+        <item>Section 352</item>
+        <item>Section 354A</item>
+        <item>Section 354B</item>
+        <item>Section 354C</item>
+        <item>Section 354C</item>
+        <item>Section 354D</item>
+        <item>Section 359</item>
+        <item>Section 362</item>
+        <item>Section 363A</item>
+        <item>Section 364</item>
+        <item>Section 365</item>
+        <item>Section 370</item>
+        <item>Section 370A</item>
+        <item>Section 372</item>
+        <item>Section 373</item>
+        <item>Section 376</item>
+        <item>Section 376A</item>
+        <item>Section 376B</item>
+        <item>Section 376C</item>
+        <item>Section 376D</item>
+        <item>Section 376E</item>
+        <item>Section 377</item>
+    </string-array>
+    <string-array name="Section_heading">
+        <item>Whoever causes death by doing an act with the intention of causing death,
+            or with the intention of causing such bodily injury as is likely to cause death,
+            or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide.
+            Illustrations
+            A lays sticks and turf over a pit, with the intention of thereby causing death,
+            or with the knowledge that death is likely to be thereby caused. Z,
+            believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide.
+            Explanations
+
+            A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.
+            Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skillful treatment the death might have been prevented.
+            The causing of the death of a child in the mother’ womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.</item>
+        <item>Except in the cases hereinafter excepted, culpable homicide is murder —
+
+        If the act by which the death is caused is done with the intention of causing death, or
+        If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused. orIf it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or
+        If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.
+        Illustrations
+            A shoots Z with the intention of killing him. Z dies in consequence. A commits murder.
+        A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death.
+        A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a man in the ordinary course of nature. Z dies in consequence. Here A is guilty of murder, although he may not have intended to cause Z’ death.
+        A without any excuse fires a loaded cannon into a crowd of persons and kills one of them. A is guilty of murder, although he may not have had a premeditated design to kill any particular individual.
+        Exception 1
+        When culpable homicide is not murder – Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident.
+        The above exception is subject to the following provisos:
+
+        Provisos
+
+        That the provocation is not sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person.
+        That the provocation is not given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant.
+        That the provocation is not given by anything done in the lawful exercise of the right of private defence.
+        Explanations
+
+        Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact.
+
+        A, under the influence of passion excited by a provocation given by Z, intentionally kills Y, Z’ child. This is murder, inasmuch as the provocation was not given by the child, and the death of the child was not caused by accident or misfortune in doing an act caused by the provocation.
+        Y gives grave and sudden provocation to A. A, on this provocation, fires a pistol at Y, neither intending nor knowing himself to be likely to kill Z, who is near him, but out of sight. A kills Z. Here A has not committed murder, but merely culpable homicide.</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+        <item>This is a section</item>
+
+    </string-array>
 </resources>

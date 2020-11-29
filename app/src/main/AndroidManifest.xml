@@ -14,12 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sentry">
+        <activity android:name=".selfDefenseForm"></activity>
+        <activity android:name=".self_defense" />
+        <activity android:name=".SelfDefense" />
+        <activity android:name=".Database" />
+        <activity android:name=".LawDetailActivity" />
+        <activity android:name=".LawInfoActivity" />
         <activity android:name=".SendingLocation" />
         <activity android:name=".ContactAdder" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY_HER" />
+            android:value="YOUR_API_KEY" />
 
         <activity android:name=".HeatMap" />
         <activity android:name=".Dashboard" />
