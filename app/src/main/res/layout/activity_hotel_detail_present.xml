@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotelDetailPresent">
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="365dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_name"
+        app:srcCompat="@drawable/hayaat" />
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="239dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="5dp"
+        android:text="Hotel Name"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_description"
+        android:layout_width="382dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="13dp"
+        android:gravity="fill_vertical"
+        android:maxLines="5000000"
+        android:scrollbars="vertical"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:text="Hotel description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_hotel" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="88dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="120dp"
+        android:text="Rating"
+        app:layout_constraintBottom_toTopOf="@+id/location_hotel"
+        app:layout_constraintEnd_toStartOf="@+id/price_hotel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_image" />
+
+    <TextView
+        android:id="@+id/price_hotel"
+        android:layout_width="133dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="16dp"
+        android:text="price of room "
+        app:layout_constraintBottom_toTopOf="@+id/location_hotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_image"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/location_hotel"
+        android:layout_width="381dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="20dp"
+        android:text="LOCATION"
+        app:layout_constraintBottom_toTopOf="@+id/phone_hotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <TextView
+        android:id="@+id/phone_hotel"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="5dp"
+        android:text="Phone Number"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_hotel" />
+
+    <TextView
+        android:id="@+id/detail_link"
+        android:layout_width="221dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="23dp"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:text="Hotel Detail Link"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_hotel"
+        app:layout_constraintTop_toBottomOf="@+id/location_hotel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

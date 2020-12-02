@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotel_info">
+
+    <Button
+        android:id="@+id/hot_info"
+        android:layout_width="272dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="86dp"
+        android:text="Hotel information"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_regis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hotel_regis"
+        android:layout_width="263dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="92dp"
+        android:text="Hotel Registration"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hot_info" />
+
+    <Button
+        android:id="@+id/hotel_show"
+        android:layout_width="263dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="50dp"
+        android:text="New Hotel Registered"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_regis" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.example.sentry;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -51,6 +52,7 @@ public class LawDetailActivity extends AppCompatActivity {
             Log.v(Tag,"i am entering set data");
             title.setText(data1);
             description.setText(data2);
+            description.setMovementMethod(new ScrollingMovementMethod());
             main_img.setImageResource(myImageView);
         }
     }

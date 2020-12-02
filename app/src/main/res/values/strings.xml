@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Sentry</string>
     <string-array name="Section_code_number">
-        <item>Section 229</item>
+        <item>Section 299</item>
         <item>Section 300</item>
         <item>Section 304B</item>
         <item>Section 306</item>
@@ -33,56 +33,759 @@
         <item>Section 376A</item>
         <item>Section 376B</item>
         <item>Section 376C</item>
-        <item>Section 376D</item>
-        <item>Section 376E</item>
         <item>Section 377</item>
     </string-array>
+    <string-array name="section_short_description">
+        <item>- Culpable Homicide</item>
+        <item>Murder</item>
+        <item>- Dowry Death</item>
+        <item>- Grievous Hurt</item>
+        <item>Voluntarily causing Grievous Hurt</item>
+        <item>Punishment for voluntarily causing hurt</item>
+        <item>Wrongful restraint</item>
+        <item>Wrongful Confinement</item>
+        <item>Wrongful confinement in secret</item>
+        <item>Wrongful confinement to extort property, or constrain to illegal act</item>
+        <item>Force</item>
+        <item>Punishment for assault or criminal force otherwise than on grave provocation</item>
+        <item>Sexual harassment and punishment for sexual harassment</item>
+        <item>- Assault or use of criminal force to woman with intent to disrobe</item>
+        <item>Voyeurism</item>
+        <item>Stalking</item>
+        <item>Kidnapping</item>
+        <item>Abduction</item>
+        <item>- Kidnapping or maiming a minor for purposes of begging</item>
+        <item>- Kidnapping or abducting in order to murder</item>
+        <item>Kidnapping or abducting with intent secretly and wrongfully to confine
+person</item>
+        <item>Trafficking of person</item>
+        <item>- Exploitation of a trafficked person</item>
+        <item>Selling minor for purposes of prostitution, etc.</item>
+        <item>Buying minor for purposes of prostitution, etc.</item>
+        <item>Punishment for rape</item>
+        <item>Punishment for causing death or resulting in persistent vegetative state of
+victim</item>
+        <item>- Sexual intercourse by husband upon his wife during separation</item>
+        <item>Sexual intercourse by person in authority</item>
+        <item>Gang rape</item>
+        <item>- Punishment for repeat offenders</item>
+        <item>- Unnatural offences</item>
+        <item>Sexual activities "against the order of nature"</item>
+    </string-array>
     <string-array name="Section_heading">
-        <item>Whoever causes death by doing an act with the intention of causing death,
-            or with the intention of causing such bodily injury as is likely to cause death,
-            or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide.
-            Illustrations
-            A lays sticks and turf over a pit, with the intention of thereby causing death,
-            or with the knowledge that death is likely to be thereby caused. Z,
-            believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide.
-            Explanations
-
-            A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.
-            Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skillful treatment the death might have been prevented.
-            The causing of the death of a child in the mother’ womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.</item>
+        <item>Whoever causes death by doing an act with the intention of causing death, or with the
+intention of causing such bodily injury as is likely to cause death, or with the knowledge
+that he is likely by such act to cause death, commits the offence of culpable homicide.
+Illustrations
+1. A lays sticks and turf over a pit, with the intention of thereby causing death, or with
+the knowledge that death is likely to be thereby caused. Z, believing the ground to
+be firm, treads on it, falls in and is killed. A has committed the offence of culpable
+homicide.
+2. A knows Z to be behind a bush. B does not know it. A, intending to cause, or
+knowing it to be likely to cause Z ’death, induces B to fire at the bush. B fires and
+kills Z. Here B may be guilty of no offence; but A has committed the offence of
+culpable homicide.
+3. A, by shooting at a fowl with intent to kill and steal it, kills B, who is behind a bush;
+A not knowing that he was there. Here, although A was doing an unlawful act, he
+was not guilty of culpable homicide, as he did not intend to kill B or to cause death
+by doing an act that he knew was likely to cause death.</item>
         <item>Except in the cases hereinafter excepted, culpable homicide is murder —
-
-        If the act by which the death is caused is done with the intention of causing death, or
-        If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused. orIf it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or
-        If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.
-        Illustrations
-            A shoots Z with the intention of killing him. Z dies in consequence. A commits murder.
-        A, knowing that Z is labouring under such a disease that a blow is likely to cause his death, strikes him with the intention of causing bodily injury. Z dies in consequence of the blow. A is guilty of murder, although the blow might not have been sufficient in the ordinary course of nature to cause the death of a person in a sound state of health. But if A, not knowing that Z is labouring under any disease, gives him such a blow as would not in the ordinary course of nature kill a person in a sound state of health, here A, although he may intend to cause bodily injury, is not guilty of murder, if he did not intend to cause death, or such bodily injury as in the ordinary course of nature would cause death.
-        A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a man in the ordinary course of nature. Z dies in consequence. Here A is guilty of murder, although he may not have intended to cause Z’ death.
-        A without any excuse fires a loaded cannon into a crowd of persons and kills one of them. A is guilty of murder, although he may not have had a premeditated design to kill any particular individual.
-        Exception 1
-        When culpable homicide is not murder – Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident.
-        The above exception is subject to the following provisos:
-
-        Provisos
-
-        That the provocation is not sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person.
-        That the provocation is not given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant.
-        That the provocation is not given by anything done in the lawful exercise of the right of private defence.
+1. If the act by which the death is caused is done with the intention of causing death, or
+2. If it is done with the intention of causing such bodily injury as the offender knows to
+be likely to cause the death of the person to whom the harm is caused. or
+3. If it is done with the intention of causing bodily injury to any person and the bodily
+injury intended to be inflicted is sufficient in the ordinary course of nature to cause
+death, or
+4. If the person committing the act knows that it is so imminently dangerous that it must,
+in all probability, cause death, or such bodily injury as is likely to cause death, and
+commits such act without any excuse for incurring the risk of causing death or such
+injury as aforesaid.
+Illustrations
+1. A shoots Z with the intention of killing him. Z dies in consequence. A commits murder.
+2. A, knowing that Z is labouring under such a disease that a blow is likely to cause his
+death, strikes him with the intention of causing bodily injury. Z dies in consequence of
+the blow. A is guilty of murder, although the blow might not have been sufficient in the
+ordinary course of nature to cause the death of a person in a sound state of health.
+But if A, not knowing that Z is labouring under any disease, gives him such a blow as
+would not in the ordinary course of nature kill a person in a sound state of health,
+here A, although he may intend to cause bodily injury, is not guilty of murder, if he did
+not intend to cause death, or such bodily injury as in the ordinary course of nature
+would cause death.
+3. A intentionally gives Z a sword-cut or club-wound sufficient to cause the death of a
+man in the ordinary course of nature. Z dies in consequence. Here A is guilty of
+murder, although he may not have intended to cause Z ’death.
+4. A without any excuse fires a loaded cannon into a crowd of persons and kills one of
+them. A is guilty of murder, although he may not have had a premeditated design to
+kill any particular individual.</item>
+        <item>1. Where the death of a woman is caused by any burns or bodily injury or occurs otherwise
+than under normal circumstances within seven years of her marriage and it is shown
+that soon before her death she was subjected to cruelty or harassment by her husband
+or any relative of her husband for, or in connection with, any demand for dowry, such
+death shall be called “dowry death”, and such husband or relative shall be deemed to
+have caused her death.
+2. Explanations
+1. For the purposes of this sub-section, “dowry” shall have the same meaning as in
+section 2 of the Dowry Prohibition Act, 1961 (28 of 1961)
+4. Whoever commits dowry death shall be punished with imprisonment for a term which
+shall not be less than seven years but which may extend to imprisonment for life.</item>
+        <item>If any person commits suicide, whoever abets the commission of such suicide, shall be
+punished with imprisonment of either description for a term which may extend to ten years,
+and shall also be liable to fine.</item>
+        <item>Whoever does any act under such circumstances, that if he thereby caused death he
+would be guilty of culpable homicide, and does by such act cause the death of a quick
+unborn child, shall be punished with imprisonment of either description for a term which
+may extend to ten years, and shall also be liable to fine.
+Illustrations
+1. A, knowing that he is likely to cause the death of a pregnant woman, does an act
+which, if it caused the death of the woman, would amount to culpable homicide. The
+woman is injured, but does not die; but the death of an unborn quick child with which
+she is pregnant is thereby caused. A is guilty of the offence defined in this section.</item>
+        <item>The following kinds of hurt only are designated as “grievous”:
+1. Emasculation.
+2. Permanent privation of the sight of either eye.
+3. Permanent privation of the hearing of either ear.
+4. Privation of any member or joint.
+5. Destruction or permanent impairing of the powers of any member or joint.
+6. Permanent disfiguration of the head or face.
+7. Fracture or dislocation of a bone or tooth.
+8. Any hurt which endangers life or which causes the sufferer to be during the space of
+twenty days in severe bodily pain, or unable to follow his ordinary pursuits.
+</item>
+        <item>Whoever voluntarily causes hurt, if the hurt which he intends to cause or knows himself to
+be likely to cause is grievous hurt, and if the hurt which he causes is grievous hurt, is said
+“voluntarily to cause grievous hurt”.
+Explanations
+1. A person is not said voluntarily to cause grievous hurt except when he both causes
+grievous hurt and intends or knows himself to be likely to cause grievous hurt. But he
+is said voluntarily to cause grievous hurt, if intending or knowing himself to be likely to
+cause grievous hurt of one kind, he actually causes grievous hurt of another kind.
+Illustrations
+1. A, intending of knowing himself to be likely permanently to disfigure Z ’face, gives Z a
+blow which does not permanently disfigure Z ’face, but which causes Z to suffer
+severe bodily pain for the space of twenty days. A has voluntarily caused grievous
+hurt.
+</item>
+        <item>Whoever, except in the case provided for by section 334, voluntarily causes hurt, shall be
+punished with imprisonment of either description for a term which may extend to one year,
+or with fine which may extend to one thousand rupees, or with both.</item>
+        <item>Whoever voluntarily obstructs any person so as to prevent that person from proceeding in
+any direction in which that person has a right to proceed, is said wrongfully to restrain that
+person.
+Exceptions
+1. The obstruction of a private way over land or water which a person in good faith
+believes himself to have a lawful right to obstruct, is not an offence within the
+meaning of this section.
+Illustrations
+1. A obstructs a path along which Z has a right to pass. A not believing in good faith that
+he has a right to stop the path. Z is thereby prevented from passing. A wrongfully
+restrains Z.</item>
+        <item>Whoever wrongfully restrains any person in such a manner as to prevent that person from
+proceeding beyond certain circumscribing limits, is said “wrongfully to confine” that person.
+Illustrations
+1. A causes Z to go within a walled space, and locks Z. Z is thus prevented from
+proceeding in any direction beyond the circumscribing line of wall. A wrongfully
+confines z.
+2. A places men with firearms at the outlets of a building, and tells Z that they will fire at
+Z if Z attempts leave the building. A wrongfully confines Z.
+</item>
+        <item>Whoever wrongfully confines any person in such manner as to indicate an intention that
+the confinement of such person may not be known to any person interested in the person
+so confined, or to any public servant, or that the place of such confinement may not be
+known to or discovered by any such person or public servant as hereinbefore mentioned,
+shall be punished with imprisonment of either description for a term which may extend to
+two years in addition to any other punishment to which he may be liable for such wrongful
+confinement.</item>
+        <item>Whoever wrongfully confines any person for the purpose of extorting from the person
+confined, or from any person interested in the person confined, any property or valuable
+security or of constraining the person confined or any person interested in such person to
+do anything illegal or to give any information which may facilitate the commission of an
+offence, shall be punished with imprisonment of either description for a term which may
+extend to three years, and shall also be liable to fine.
+</item>
+        <item>A person is said to use force to another if he causes motion, change of motion, or
+cessation of motion to that other, or if he causes to any substance such motion, or change
+of motion, or cessation of motion as brings that substance into contact with any part of that
+other ’body, or with anything which that other is wearing or carrying, or with anything so
+situated that such contact affects that other ’sense of feeling;
+Provided that the person causing the motion, or change of motion, or cessation of motion,
+causes that motion, change of motion, or cessation of motion in one of the three ways
+hereinafter described:
+1. By his own bodily power.
+2. By disposing any substance in such a manner that the motion or change or cessation
+of motion takes place without any further act on his part, or on the part of any other
+person.
+3. By inducing any animal to move, to change its motion, or to cease to move.</item>
+        <item>Whoever assaults or uses criminal force to any person otherwise than on grave and
+sudden provocation given by that person, shall be punished with imprisonment of either
+description for a term which may extend to three months, or with fine which may extend to
+five hundred rupees, or with both.
+Explanations
+1. Grave and sudden provocation will not mitigate the punishment for an offence under
+this section, if the provocation is sought or voluntarily provoked by the offender as an
+excuse for the offence, or
+2. if the provocation is given by anything done in obedience to the law, or by a public
+servant, in the lawful exercise of the powers of such public servant, or
+3. if the provocation is given by anything done in the lawful exercise of the right of
+private defence.
+Whether the provocation was grave and sudden enough to mitigate the offence, is a
+question of fact.</item>
+        <item>1. A man committing any of the following acts—
+1. physical contact and advances involving unwelcome and explicit sexual
+overtures; or
+2. a demand or request for sexual favours; or
+3. showing pornography against the will of a woman; or
+4. making sexually coloured remarks, shall be guilty of the offence of sexual
+harassment.
+2. Any man who commits the offence specified in clause (i) or clause (ii) or clause (iii) of
+sub-section (1) shall be punished with rigorous imprisonment for a term which may
+extend to three years, or with fine, or with both.
+3. Any man who commits the offence specified in clause (iv) of sub-section (1) shall be
+punished with imprisonment of either description for a term which may extend to one
+year, or with fine, or with both.
+ Criminal Law (Amendment) Act, 2013
+</item>
+        <item>Any man who assaults or uses criminal force to any woman or abets such act with the
+intention of disrobing or compelling her to be naked, shall be punished with imprisonment
+of either description for a term which shall not be less than three years but which may
+extend to seven years, and shall also be liable to fine.
+ Criminal Law (Amendment) Act, 2013</item>
+        <item>Any man who watches, or captures the image of a woman engaging in a private act in
+circumstances where she would usually have the expectation of not being observed either
+by the perpetrator or by any other person at the behest of the perpetrator or disseminates
+such image shall be punished on first conviction with imprisonment of either description for
+a term which shall not be less than one year, but which may extend to three years, and
+shall also be liable to fine, and be punished on a second or subsequent conviction, with
+imprisonment of either description for a term which shall not be less than three years, but
+which may extend to seven years, and shall also be liable to fine.
+Explanations
+1. For the purpose of this section, “private act” includes an act of watching carried out in
+a place which, in the circumstances, would reasonably be expected to provide privacy
+and where the victim’s genitals, posterior or breasts are exposed or covered only in
+underwear; or the victim is using a lavatory; or the victim is doing a sexual act that is
+not of a kind ordinarily done in public.
+2. Where the victim consents to the capture of the images or any act, but not to their
+dissemination to third persons and where such image or act is disseminated, such
+dissemination shall be considered an offence under this section.
+ Criminal Law (Amendment) Act, 2013</item>
+        <item>) Any man who—
+1. follows a woman and contacts, or attempts to contact such woman to foster personal
+interaction repeatedly despite a clear indication of disinterest by such woman; or
+2. monitors the use by a woman of the internet, email or any other form of electronic
+communication,
+3. commits the offence of stalking;
+Provided that such conduct shall not amount to stalking if the man who pursued it proves
+that—
+1. it was pursued for the purpose of preventing or detecting crime and the man accused
+of stalking had been entrusted with the responsibility of prevention and detection of
+crime by the State; or
+2. it was pursued under any law or to comply with any condition or requirement imposed
+by any person under any law; or
+3. in the particular circumstances such conduct was reasonable and justified.
+(2) Whoever commits the offence of stalking shall be punished on first conviction with
+imprisonment of either description for a term which may extend to three years, and shall
+also be liable to fine; and be punished on a second or subsequent conviction, with
+imprisonment of either description for a term which may extend to five years, and shall
+also be liable to fine.
+ Criminal Law (Amendment) Act, 2013</item>
+        <item>Kidnapping is of two kinds:
+1. kidnapping from India, and
+2. kidnapping from lawful guardianship.</item>
+        <item>Whoever by force compels, or by any deceitful means induces any person to go from any
+place, is said to abduct that person.</item>
+        <item>Whoever by force compels, or by any deceitful means induces any person to go from any
+place, is said to abduct that person.</item>
+        <item>Whoever kidnaps or abducts any person in order that such person may be murdered or
+may be so disposed of as to be put in danger of being murdered, shall be punished with
+imprisonment for life or rigorous imprisonment for a term which may extend to ten years,
+and shall also be liable to fine.
+Illustrations
+1. A kidnaps Z from India, intending or knowing it to be likely that Z may be sacrificed to
+an idol. A has committed the offence defined in this section.
+2. A forcibly carries or entices B away from his home in order that B may be murdered.
+A has committed the offence defined in this section.</item>
+        <item>Whoever kidnaps or abducts any person with intent to cause that person to be secretly
+and wrongfully confined, shall be punished with imprisonment of either description for a
+term which may extend to seven years, and shall also be liable to fine.</item>
+        <item>1. Whoever, for the purpose of exploitation, (a) recruits, (b) transports, ( c) harbours, (d)
+transfers, or (e) receives, a person or persons, by—
+1. using threats, or
+2. using force, or any other form of coercion, or
+3. by abduction, or
+4. by practising fraud, or deception, or
+5. by abuse of power, or
+6. by inducement, including the giving or receiving of payments or benefits, in
+order to achieve the consent of any person having control over the person
+recruited, transported, harboured, transferred or received,
+7. commits the offence of trafficking.
+8. Explanations
+9. 1. The expression “exploitation” shall include any act of physical exploitation or
+any form of sexual exploitation, slavery or practices similar to slavery,
+servitude, or the forced removal of organs.
+10. 2. The consent of the victim is immaterial in determination of the offence of
+trafficking.
+2. Whoever commits the offence of trafficking shall be punished with rigorous
+imprisonment for a term which shall not be less than seven years, but which may
+extend to ten years, and shall also be liable to fine.
+3. Where the offence involves the trafficking of more than one person, it shall be
+punishable with rigorous imprisonment for a term which shall not be less than ten
+years but which may extend to imprisonment for life, and shall also be liable to fine.
+4. Where the offence involves the trafficking of a minor, it shall be punishable with
+rigorous imprisonment for a term which shall not be less than ten years, but which
+may extend to imprisonment for life, and shall also be liable to fine.
+5. Where the offence involves the trafficking of more than one minor, it shall be
+punishable with rigorous imprisonment for a term which shall not be less than
+fourteen years, but which may extend to imprisonment for life, and shall also be liable
+to fine.
+6. If a person is convicted of the offence of trafficking of minor on more than one
+occasion, then such person shall be punished with imprisonment for life, which shall
+mean imprisonment for the remainder of that person’s natural life, and shall also be
+liable to fine.
+7. When a public servant or a police officer is involved in the trafficking of any person
+then, such public servant or police officer shall be punished with imprisonment for life,
+which shall mean imprisonment for the remainder of that person’s natural life, and
+shall also be liable to fine.
+1 Criminal Law (Amendment) Act, 2013
+</item>
+        <item>1. Whoever, knowingly or having reason to believe that a minor has been trafficked,
+engages such minor for sexual exploitation in any manner, shall be punished with
+rigorous imprisonment for a term which shall not be less than five years, but which
+may extend to seven years, and shall also be liable to fine.
+2. Whoever, knowingly by or having reason to believe that a person has been trafficked,
+engages such person for sexual exploitation in any manner, shall be punished With
+rigorous imprisonment for a term which shall not be less than three years, but which
+may extend to five years, and shall also be liable to fine.
+1 Criminal Law (Amendment) Act, 2013</item>
+        <item>Whoever sells, lets to hire, or otherwise disposes of any person under the age of eighteen
+years with intent that such person shall at any age be employed or used for the purpose of
+prostitution or illicit intercourse with any person or for any unlawful and immoral purpose,
+or knowing it to be likely that such person will at any age be employed or used for any
+such purpose, shall be punished with imprisonment of either description for a term which
+may extend to ten years, and shall also be liable to fine.
+Explanations
+1. When a female under the age of eighteen years is sold, let for hire, or otherwise
+disposed of to a prostitute or to any person who keeps or manages a brothel, the
+person so disposing of such female shall, until the contrary is proved, be presumed to
+have disposed of her with the intent that she shall be used for the purpose of
+prostitution.
+2. For the purposes of this section “illicit intercourse” means sexual intercourse between
+persons not united by marriage, or by any union or tie which though not amounting to
+a marriage, is recognised by the personal law or custom of the community to which
+they belong or, where they belong to different communities, of both such
+communities, as constituting between them a quasi-marital relation.
+</item>
+        <item>Whoever buys, hires or otherwise obtains possession of any person under the age of
+eighteen years with intent that such person shall at any age be employed or used for the
+purpose of prostitution or illicit intercourse with any person or for any unlawful and immoral
+purpose, or knowing it to be likely that such person will at any age be employed or used
+for any such purpose, shall be punished with imprisonment of either description for a term
+which may extend to ten years, and shall also be liable to fine.
+Explanations
+1. Any prostitute or any person keeping or managing a brothel, who buys, hires or
+otherwise obtains possession of a female under the age of eighteen years shall, until
+the contrary is proved, be presumed to have obtained possession of such female with
+the intent that she shall be used for the purpose of prostitution.
+2. “Illicit intercourse” has the same meaning as in section 372.</item>
+        <item>1. Whoever, except in the cases provided for in sub-section (2), commits rape, shall be
+punished with rigorous imprisonment of either description for a term which shall not
+be less than ten2 years, but which may extend to imprisonment for life, and shall also
+be liable to fine.
+2. Whoever—
+1. being a police officer, commits rape,
+1. within the limits of the police station to which such police officer is
+appointed; or
+2. in the premises of any station house; or
+3. on a woman in such police officer’s custody or in the custody of a police
+officer subordinate to such police officer; or
+2. being a public servant, commits rape on a woman in such public servant’s
+custody or in the custody of a public servant subordinate to such public
+servant; or
+3. being a member of the armed forces deployed in an area by the Central or a
+State Government commits rape in such area; or
+4. being on the management or on the staff of a jail, remand home or other place
+of custody established by or under any law for the time being in force or of a
+women’s or children’s institution, commits rape on any inmate of such jail,
+remand home, place or institution; or
+5. being on the management or on the staff of a hospital, commits rape on a
+woman in that hospital; or
+6. being a relative, guardian or teacher of, or a person in a position of trust or
+authority towards the woman, commits rape on such woman; or
+7. commits rape during communal or sectarian violence; or
+8. commits rape on a woman knowing her to be pregnant; or
+9. commits rape, on a woman incapable of giving consent; or
+10. being in a position of control or dominance over a woman, commits rape on
+such woman; or
+11. commits rape on a woman suffering from mental or physical disability; or
+12. while committing rape causes grievous bodily harm or maims or disfigures or
+endangers the life of a woman; or
+13. commits rape repeatedly on the same woman,
+14. shall be punished with rigorous imprisonment for a term which shall not be
+less than ten years, but which may extend to imprisonment for life, which shall
+mean imprisonment for the remainder of that person’s natural life, and shall
+also be liable to fine.
+3. Whoever, commits rape on a woman under sixteen years of age shall be punished
+with rigorous imprisonment for a term which shall not be less than twenty years, but
+which may extend to imprisonment for life, which shall mean imprisonment for the
+remainder of that person’s natural life, and shall also be liable to fine:2
+4. Provided that such fine shall be just and reasonable to meet the medical expenses
+and rehabilitation of the victim:
+5. Provided further that any fine imposed under this sub-section shall be paid to the
+victim.
+Explanations
+1. For the purposes of this sub-section1. “armed forces” means the naval, military and air forces and includes any
+member of the Armed Forces constituted under any Law for the time being in
+force, including the paramilitary forces and any auxiliary forces that are under
+the control of the Central Government, or the State Government;
+2. “hospital” means the precincts of the hospital and includes the precincts of any
+institution for the reception and treatment of persons during convalescence or
+of persons requiring medical attention or rehabilitation;
+3. “police officer” shall have the same meaning as assigned to the expression
+“police” under the Police Act, 1861;
+4. “women’s or children’s institution” means an institution, whether called an
+orphanage or a home for neglected women or children or a widow’s home or
+an institution called by any other name, which is established and maintained
+for the reception and care of women or children.
+1 Criminal Law (Amendment) Act, 2013
+            2 Criminal Law (Amendment) Act, 2018 </item>
+        <item> Punishment for causing death or resulting in persistent vegetative state of
+            victim1
+            Whoever, commits an offence punishable under sub-section (1) or sub-section (2) of
+        section 376 and in the course of such commission inflicts an injury which causes the death
+        of the woman or causes the woman to be in a persistent vegetative state, shall be
+        punished with rigorous imprisonment for a term which shall not be less than twenty years,
+        but which may extend to imprisonment for life, which shall mean imprisonment for the
+        remainder of that person’s natural life, or with death.
+         Criminal Law (Amendment) Act, 2013</item>
+        <item>Sexual intercourse by husband upon his wife during separation
+            Whoever has sexual intercourse with his own wife, who is living separately, whether under
+            a decree of separation or otherwise, without her consent, shall be punished with
+            imprisonment of either description for a term which shall not be less than two years but
+            which may extend to seven years, and shall also be liable to fine.
+            Explanations
+            1. In this section, “sexual intercourse” shall mean any of the acts mentioned in clauses
+            (a) to (d) of section 375.
+             Criminal Law (Amendment) Act, 2013</item>
+        <item>Whoever, being—
+            1. in a position of authority or in a fiduciary relationship; or
+            2. a public servant; or
+            3. superintendent or manager of a jail, remand home or other place of custody
+            established by or under any law for the time being in force, or a women’s or children’s
+            institution; or
+            4. on the management of a hospital or being on the staff of a hospital, abuses such
+            position or fiduciary relationship to induce or seduce any woman either in his custody
+            or under his charge or present in the premises to have sexual intercourse with him,
+            such sexual intercourse not amounting to the offence of rape, shall be punished with
+            rigorous imprisonment of either description for a term which shall not be less than 5
+            years, but which may extend to ten years, and shall also be liable to fine.
+            Explanations
+            1. In this section, “sexual intercourse” shall mean any of the acts mentioned in clauses
+            (a) to (d) of section 375.
+            2. For the purposes of this section, Explanation I to section 375 shall also be applicable.
+            3. “Superintendent”, in relation to a jail, remand home or other place of custody or a
+            women’s or children’s institution, includes a person holding any other office in such
+            jail, remand home, place or institution by virtue of which such person can exercise
+            any authority or control over its inmates.
+            4. The expressions “hospital” and “women’s or children’s institution” shall respectively
+            have the same meaning as in Explanation to sub-section (2) of section 376.
+            1 Criminal Law (Amendment) Act, 2013</item>
+        <item>Where a woman is raped by one or more persons constituting a group or acting in
+            furtherance of a common intention, each of those persons shall be deemed to have
+            committed the offence of rape and shall be punished with rigorous imprisonment for a term
+            which shall not be less than twenty years, but which may extend to life which shall mean
+            imprisonment for the remainder of that person’s natural life, and with fine;
+            Provided that such fine shall be just and reasonable to meet the medical expenses and
+            rehabilitation of the victim;
+            Provided further that any fine imposed under this section shall be paid to the victim.
+            1 Criminal Law (Amendment) Act, 2013</item>
+        <item>Whoever has been previously convicted of an offence punishable under section 376 or
+        section 376A or section2 376AB or section 376D or section 376DA or section 376DB and
+        is subsequently convicted of an offence punishable under any of the said sections shall be
+        punished with imprisonment for life which shall mean imprisonment for the remainder of
+        that person’s natural life, or with death.
+        1 Criminal Law (Amendment) Act, 2013
+        2 Criminal Law (Amendment) Act, 2018</item>
+        <item>Whoever voluntarily has carnal intercourse against the order of nature with any man,
+        woman or animal, shall be punished with imprisonment for life, or with imprisonment of
+        either description for a term which may extend to ten years, and shall also be liable to fine.
         Explanations
-
-        Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact.
-
-        A, under the influence of passion excited by a provocation given by Z, intentionally kills Y, Z’ child. This is murder, inasmuch as the provocation was not given by the child, and the death of the child was not caused by accident or misfortune in doing an act caused by the provocation.
-        Y gives grave and sudden provocation to A. A, on this provocation, fires a pistol at Y, neither intending nor knowing himself to be likely to kill Z, who is near him, but out of sight. A kills Z. Here A has not committed murder, but merely culpable homicide.</item>
-        <item>This is a section</item>
-        <item>This is a section</item>
-        <item>This is a section</item>
-        <item>This is a section</item>
-        <item>This is a section</item>
+        1. Penetration is sufficient to constitute the carnal intercourse necessary for the offence
+        described in this section.
+        The sections above are all offences that are punishable. A lawsuit can be filed against a
+        person on the above criminal grounds.</item>
         <item>This is a section</item>
         <item>This is a section</item>
         <item>This is a section</item>
 
     </string-array>
+    <string-array name="video_title">
+        <item>ACTIVE SELF PROTECTION</item>
+        <item>AJA DANG</item>
+        <item>ANDO MIERZWA</item>
+        <item>CONTACT COMBAT INDIAN</item>
+        <item>FINAL ROUND TRAINING</item>
+        <item>GRACIE BREAKDOWN</item>
+        <item>JANICE HUANG</item>
+        <item>LEX FITNESS</item>
+        <item>MASTER SHAILASH</item>
+        <item>MASTER WONG</item>
+        <item>HIGH PERFORMANCE TRAINING WITH OREN MELLUL</item>
+        <item>PIB INDIA</item>
+        <item>SPECIAL TRAINING SERVICES</item>
+    </string-array>
+    <string-array name="video_description">
+        <item>Every single day they post a real defensive encounter caught on camera and perform an after-action report on it for lessons learned.
+            They educate the public on what they see that works and how to protect one during  real robberies, muggings, carjackings, and other defensive situations.
+            Their approach is evidence-based, meaning they try hard not to have a pre-set dogma but to go where the actual evidence leads them,as a result towards more positive outcomes for good people.
+            Active Self Protection trains people in armed and unarmed self-defense. Their motto: "cover your ASP!" (that means your Attitude, Skills, and Plan)</item>
+        <item>Aja is a self made woman.She has worked to hard reach at the point she is fighting all obstacles and
+        finally reaching the goal. Her journey made her belief that every person has a fire within themselves,and that  each person is strong enough to stand for themselves.
+        Through her techniques she want to make the person strong,self-reliant and thereby instill self confidence in them.</item>
+        <item>Ando is a martial artist. He puts videos on martial art with the thought of helping others with the same knowledge
+        that he got from his teachers.His course is set for all level from beignners who are looking to build a strong foundation or someone who already has
+        knowledge and has a wish to increase his skill set he has all of it covered for you.His goal is to help one to make a better version for themselves.</item>
+        <item>Krav Maga was initially developed as a self-defense system for the Israel Defense
+        Forces (IDF), focusing on the counter-attack, attack and threat neutralization strategies
+        that are practical and efficient. Due to its emphasis on real-world self-defense
+        techniques, Krav Maga is recommended by experts in martial arts, as well as by
+        military personnel, police officers and fighters of various styles.
+        Beginners can immediately appreciate and benefit from the logical techniques and
+        practical uses of Krav Maga, while advanced practitioners aim to increase their
+        physical power and to refine and strengthen their responses to a wide variety of
+        threats.</item>
+        <item>At Home Workouts, Self Defense for Women, Boxing for Beginners</item>
+        <item>gracie academy is an Jiu-Jitsu teaching organization which helps individuals to keep themselves fit and be in shape.
+            This has lead for them to train themselves,devise new techniques to build immunity and hence get strong.
+            They hold interactive sessions with their followers ,monitering their progress and evaluating their skill and them helping them build it more..
+        </item>
+        <item>Janice Hung,is an International Wushu Champion, Actress and
+        Commercial Model. she is a  fitness enthusiast and loves to share her years
+        of experience in training Wushu. she loves to teach and inspire everyone to have an
+        active lifestyle that can last . her aim is to empower, educate and equip (especially
+        women) on Self Defense.</item>
+        <item>lex lifts one to their best possibility he believes in the fact that TOGETHER WE RISE! .
+            He wants to build a society of strong confident human beings. His motto is " DESIRE | INSPIRE | ACHIEVE" </item>
+        <item>Shailash is a trainer from India who teaches Self Defense Techniques , Taekwondo , Karate ,
+        Martial Arts Training , Lathi , Talwaar, Nunchaku , Taekwondo Kicks.</item>
+        <item>Wing Chun, Tai Chi, JKD Master is the  home learning martial art channel.
+            They teach women self defense, kickboxing for fitness, Street fight self
+            defense, Wing Chun kung fu, including the traditional side Wing Chun Kung fu. Not only that
+            They also do Tai Chi for health and Combat. They are an all rounder for mix martial art and UFC training.
+            They incorporate Health and well -being in
+            our training such as nutrition, fitness, weight loss and any other benefits that can
+            optimise our life. If you’re a serious practitioner, and want to learn from home at your
+            own pace, they have online training courses available that comes with training support
+            to guide you through.</item>
+        <item>Oren has over 20 years experience in Krav Maga as well as fitness and nutrition health
+                management. Oren is trained in neuro-linguistic programming (NLP), a proven
+                approach in personal development and communicating, to better assist his customers
+                and keep them motivated. Oren started training in Krav Maga when he was just 6 years
+                old. By 14, Oren was already training his first students. He was the youngest person in
+                Israel to receive the black belt at the time he obtained his first. Currently furthering his
+                studies in medical nutrition, Oren lives and breathes for Krav Maga, fitness, nutrition
+                 and, on his free time, surfing.</item>
+        <item>Official Channel of Press Information Bureau, the Nodal agency for communicating to
+        media on behalf of Government of India.</item>
+        <item>visit the channel to build your immunity</item>
+    </string-array>
+    <string-array name="the_link">
+        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCsE_m2z1NrvF2ImeNWh84mw">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/AjaDang/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/AndoMierzwaAKASenseiAndo/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/ContactCombatIndia/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/FinalRoundTraining/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/user/GracieBreakdown/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/JaniceHung/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/user/LexFitness">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCgG8-OKq-s734FwZWeTt5rA/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/c/masterwongsystem/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCnkE7xO-UpSBvsCRl9sQz-w/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/user/pibindia/featured">Click me!</a></item>
+        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCO6CNqmNJBnRbgQ2R61X-Wg/featured">Click me!</a></item>
+    </string-array>
+    <string-array name="hotelName">
+        <item>HOTEL ARYA</item>
+        <item>Hotel GREEN ACRES </item>
+        <item>HOTEL AKASHDEEP </item>
+        <item>HOTEL PRATAP GRAND </item>
+        <item>Holiday Inn Express Gurugram Sector 50 </item>
+        <item>Staayz Premium - Hotel </item>
+        <item>Lemon Tree Premier 2, Gurugram </item>
+        <item>Hotel City Premier </item>
+        <item>Pod n Beyond|Smart Hotel</item>
+        <item>Hotel Natraj</item>
+        <item>The Alcor Hotel</item>
+        <item>J K Residency</item>
+    </string-array>
+    <string-array name="hotelRating">
+        <item>3.9</item>
+        <item>4.2</item>
+        <item>3.7</item>
+        <item>4.2</item>
+        <item>4.0</item>
+        <item>4.0</item>
+        <item>4.2</item>
+        <item>3.6</item>
+        <item>4.1</item>
+        <item>4.0</item>
+        <item>4.3</item>
+        <item>4.2</item>
+    </string-array>
+    <string-array name="RoomPrice">
+        <item>Rs.3000</item>
+        <item>Rs.2000</item>
+        <item>Rs.810</item>
+        <item>Rs.1194</item>
+        <item>Rs.1680</item>
+        <item>Rs.920</item>
+        <item>Rs.1814</item>
+        <item>Rs.1127</item>
+        <item>Rs.1456</item>
+        <item>Rs.2153</item>
+        <item>Rs.4000</item>
+        <item>RS.2000</item>
+    </string-array>
+    <string-array name="location">
+        <item>Ranchi,Jharkhand,India</item>
+        <item>Ranchi,Jharkhand,India</item>
+        <item>Ranchi,Jharkhand,India</item>
+        <item>Ranchi,Jharkhand,India</item>
+        <item>Gurugram,Haryana,India</item>
+        <item>Gurugram,Haryana,India</item>
+        <item>Gurugram,Haryana,India</item>
+        <item>Gurugram,Haryana,India</item>
+        <item>Jamshedpur,Jharkhand,India</item>
+        <item>Jamshedpur,Jharkhand,India</item>
+        <item>Jamshedpur,Jharkhand,India</item>
+        <item>Jamshedpur,Jharkhand,India</item>
+    </string-array>
+    <string-array name="state_city">
+        <item> Hazaribag Rd, Burdwan Compound, Lalpur, Ranchi, Jharkhand 834001</item>
+        <item>Airport Rd, Kunwar Singh Colony, Hinoo, Ranchi, Jharkhand 834002</item>
+        <item>Taxi Stand, Main Road Near Old, Ranchi, Jharkhand 834001</item>
+        <item> Station Rd, Sirom Toly, Kishan Singh Colony, Gosaintola, Ranchi, Jharkhand 834001</item>
+        <item>Good Earth City Centre Opposite Malibu Commercial Complex, Gurugram, Haryana 122018</item>
+        <item> U-25 Road Near Oriental Bank Block U DLF Phase 3 Pink Town House Market, Gurugram, Haryana 122002</item>
+        <item>Leisure Valley Park, 43-47 Near City Centre HUDA, Sector 29, Gurugram, Haryana 122002</item>
+        <item>6303 Near Galleria Market, opp. Supermart-1, DLF Phase IV, Gurugram, Haryana 122002</item>
+        <item>New jharkhand Delhi roadline New Kalimati Road, Near Howrah Bridge, Sakchi, Hirasingh Bagan, Kasidih, Jamshedpur, Jharkhand 831001</item>
+        <item>Bistupur Main Rd, Bistupur, Jamshedpur, Jharkhand 831001</item>
+        <item>Holding No.4, Ramdas Bhatta, New Rani Kudar, Bistupur, Jamshedpur, Jharkhand 831001</item>
+        <item>218, 7 C-Town, New Kalimati Road, Beside Sakchi Gurudwara, Sakchi, Jamshedpur, Jharkhand 831001</item>
+    </string-array>
+    <string-array name="hotelnumber">
+        <item>0651 256 1971</item>
+        <item>062048 63849</item>
+        <item>082520 06001</item>
+        <item>090603 22001</item>
+        <item>0124 668 5555</item>
+        <item>0124 407 2065</item>
+        <item>0124 488 7777</item>
+        <item> 0124 437 5652r</item>
+        <item>0657 657 1333</item>
+        <item>077638 03322</item>
+        <item>0657 662 0001</item>
+        <item>0657 223 5599</item>
+    </string-array>
+    <string-array name="HotelDetails">
+        <item>Set in a commercial neighbourhood,this modest hotel is 4 km from both Ranchi railway station, and outdoor recreation at Tagore Hill.
+        It is 3 km from Pahari Mandir Hindu temple.
+        The simply furnished, pared down rooms provide flat screen TVs and en suite wet rooms,
+            upgraded rooms add air conditioning. Room service is available.</item>
+        <item>
+            Adjacent to Birsa Munda Airport and 2.9 km from the Hatia railway station, this casual hotel is 5 km from both Chota Nagpur Plateau and Jagannath Temple.
+            Straightforward rooms feature flat screen TVs and free Wi-Fi (limited), as well as desks, minibars and private bathrooms. Room service is available.
+            Buffet breakfast is complimentary. Other amenities include a multi cuisine restaurant, a 24-hour, open-air coffee shop, and a banquet hall.
+            </item>
+        <item>
+            Set among shops and restaurants, this straightforward hotel with a modern facade is 7 km from Birsa Munda Airport and 4 km from Tagore Hill,
+            named after the famous poet and Nobel laureate.
+            Modest rooms feature flat-screen TVs, some sleep up to 4 people. Upgraded rooms provide air-conditioning.
+            Room service is offered.
+            Amenities include a down-to-earth lobby lounge and parking.
+            There is also an on-call doctor and a back-up generator.</item>
+        <item>Hotel Pratap Grand is located on Station Road and lies at a short distance from the railway station.
+            It offers comfortable lodging along with taxi service.
+            With a prime location and facilities like doctor on call, laundry and taxi service, the hotel is preferred by holidaymakers and business travellers alike.
+            Room service is provided by its courteous staff to further add to the convenience of its valued guests visiting Ranchi.
+            There is no on-site restaurant at the hotel,however, guests can explore nearby dining options to relish local fare.
+            Popular attractions like Kanke Dam, Rock Garden and Nakshatra Van are only a 20 minute drive from this hotel.</item>
+        <item>
+            Adjacent to the shops of Good Earth City Centre, this informal budget hotel is 8 km from Kingdom of Dreams,
+            an entertainment complex with theatre performances. It is 21 km from Indira Gandhi International Airport.
+            The down-to-earth rooms provide complimentary Wi-Fi, flat-screen TVs and safes, plus mini fridges, and tea and coffee making facilities.
+            Parking and a breakfast buffet are free. Other amenities consist of a streamlined restaurant and a gym.
+        </item>
+
+        <item>Set on a leafy residential street with shops and businesses, this modest hotel is 11 km from Indira Gandhi International Airport.
+            It is a 5 km from Fun N Food Village water park and 3 km from Aravalli Bio Diversity Park.
+            Bright rooms include free Wi-Fi, flat-screen TVs and air-conditioning.
+            All feature kitchenettes, seating areas and private bathrooms with bucket showers. Room service is available 24/7.
+            Parking is complimentary. Breakfast is available for a fee and is served in a restaurant that features international cuisine.
+            Event space is available, as well as a salon.</item>
+        <item>
+             A 5-minute walk from the Bollywood-style shows at Kingdom of Dreams,
+            this modern hotel in an area dotted with casual eateries is also 11 minutes walk from the musical fountain at Leisure Valley Park and 15 km from Indira Gandhi International Airport.
+            Contemporary rooms with a warm vibe have free Wi-Fi and flat-screen TVs, as well as mini fridges, microwaves, and tea and coffee making facilities.
+            Upgraded rooms come with park views. Room service is available 24/7.
+            Breakfast is complimentary.
+            Other amenities include a hip cocktail lounge and a 24-hour international cafe, along with a gym and a rooftop pool. An airport shuttle can be arranged.
+        </item>
+        <item>
+            Next to the Star shopping mall, this modern hotel is 2.6 km from Kingdom of Dreams art centre and 3.5 km from Dlf Golf Country Club.
+            The warm, relaxed rooms have free Wi-Fi and satellite TV, plus minibars, tea and coffee making facilities, and purified drinking water on tap.
+            Room service is available.
+            Freebies include parking, a breakfast buffet and an air shuttle to and from Indira Gandhi International Airport.
+            There is  also a restaurant and a terrace.
+        </item>
+        <item>Pod N Beyond Smart Hotel is a family-friendly hotel
+            offering air conditioning, a fireplace, and a desk in the rooms, and it is easy to stay connected during your stay as free wifi is offered to guests.
+            The hotel features 24 hour front desk, room service, and newspaper.
+            Plus, guests can enjoy an on-site restaurant, which has made this a popular choice among travellers visiting Jamshedpur.
+            For guests with a vehicle, free parking is available.</item>
+        <item>Nataraj is truly a hotel that showcases the best of contemporary interiors,
+            unmatched services and caters to all of your business needs.
+            The hotel is being renovated and refurbished in phases to keep up with the changing times.
+            Come experience the legend of Nataraj!</item>
+        <item>Situated in the Heart of the Jamshedpur City
+            The Alcor Hotel is one and only 4 Star Luxury Hotel,
+            located in close proximity to places of Business Hub,
+            airport and tourist attractions such as Adityapur Industrial area, Sonari Airport, Bistupur Main Market, and Jubilee Park.
+            The Alcor Hotel offers exclusive blend of the traditional hospitality with modern amenities.
+            Select from 65 Well Appointed Rooms that will make your stay worth a memory.
+            Each of the Room feature twin/king/queen bed, exclusive privileges, work table,
+            tea-coffee maker, minibar, electronic safe and complimentary wireless high-speed Internet. </item>
+        <item>
+            This casual hotel is set in the Sakchi commercial hub.
+            It is 129 km from Ranchi city, an 8-minute walk from a bus stop and 5 km from Sonari Airport.
+            The straightforward rooms and suites come with complimentary Wi-Fi.
+            Amenities range from sitting areas, and tea and coffee making facilities, to flat-screen TVs.
+            Some suites add decorative wood furnishings with geometric designs that separate living spaces.
+            There is a low-key restaurant. Other amenities include meeting rooms and event space, some of which can be provided outdoors.</item>
+    </string-array>
+    <string-array name="hotelLink">
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+        <item>link</item>
+    </string-array>
+        <!--<item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=1093350%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
+        <item name ="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=2664572%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
+        <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=4001068%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
+        <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=15515484%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
+        <item name="The Link"><a href="</item>
+        <item>I am the title</item>
+        <item>I am the title</item>
+        <item>I am the title</item>
+        <item>I am the title</item>
+        <item>I am the title</item>
+        <item>I am the title</item>
+    </string-array>
+    -->
 </resources>

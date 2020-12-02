@@ -16,16 +16,17 @@ import androidx.recyclerview.widget.RecyclerView;
 //passing  parameter and in that creating a inner class
 public class LawInfoAdapter  extends RecyclerView.Adapter<LawInfoAdapter.MyViewHolder> {
 
-    String data1[],data2[];
+    String data1[],data2[],data3[],data4[],data5[];
     int images[];
     String  Tag="Law info activity";
     Context context;
     //adding constructor with 4 parameters
 
-    public LawInfoAdapter(Context ct,String sec_code[],String sec_name[],int img[]){
+    public LawInfoAdapter(Context ct,String sec_code[],String sec_name[],String sec_description[],int img[]){
         context=ct;
         data1=sec_code;
         data2=sec_name;
+        data3=sec_description;
         images=img;
     }
 
@@ -42,8 +43,9 @@ public class LawInfoAdapter  extends RecyclerView.Adapter<LawInfoAdapter.MyViewH
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         //dynamically adding the data
         holder.section_code.setText(data1[position]);
-        holder.section_heading.setText(data2[position]);
+        holder.section_heading.setText(data3[position]);
         holder.law_image.setImageResource(images[position]);
+        Log.v(Tag,"I entered on view holder");
         //setting listener
         holder.law_layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +55,7 @@ public class LawInfoAdapter  extends RecyclerView.Adapter<LawInfoAdapter.MyViewH
                 intent.putExtra("data1",data1[position]);
                 intent.putExtra("data2",data2[position]);
                 intent.putExtra("myImageView",images[position]);
+                //intent is starting
                 context.startActivity(intent);
 
             }

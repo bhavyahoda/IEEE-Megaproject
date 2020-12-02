@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".awareness_counselling">
+
+    <Button
+        android:id="@+id/aw_co_ar_regis"
+        android:layout_width="193dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="46dp"
+        android:text="Articles registration"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aw_co_regis" />
+
+    <Button
+        android:id="@+id/art_show"
+        android:layout_width="184dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="105dp"
+        android:text="see updated articles"
+        app:layout_constraintBottom_toTopOf="@+id/aw_co_ar_show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aw_co_regis"
+        android:layout_width="189dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="40dp"
+        android:text="video /live classes regis"
+        app:layout_constraintBottom_toTopOf="@+id/aw_co_ar_regis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aw_co_ar_show" />
+
+    <Button
+        android:id="@+id/aw_co_ar_show"
+        android:layout_width="179dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="39dp"
+        android:text="See updated Videoes"
+        app:layout_constraintBottom_toTopOf="@+id/aw_co_regis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/art_show" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="174dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="102dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aw_co_ar_regis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

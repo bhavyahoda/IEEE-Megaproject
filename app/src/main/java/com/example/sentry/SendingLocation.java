@@ -121,7 +121,7 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		markerOptions.position(lat_lang);
 
 		SmsManager sms = SmsManager.getDefault();
-		String phone = "reciever phone number";
+		String phone = "RECEIVER'S PHONE NUMBER HERE";
 
 		String lat_long = String.valueOf(lat_lang.latitude).concat(" ").concat(String.valueOf(lat_lang.longitude));
 		sms.sendTextMessage(phone, null, lat_long, null, null);

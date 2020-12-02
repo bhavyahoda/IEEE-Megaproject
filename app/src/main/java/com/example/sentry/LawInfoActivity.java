@@ -10,9 +10,12 @@ import android.util.Log;
 public class LawInfoActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     //Button bt_law;
-    String sec_code[],sec_name[];
-    String Tag ="myrecyclerdata";
-    int images[]={R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img};
+    String sec_code[],sec_name[],sec_description[];
+    String Tag ="my recycler data";
+    int images[]={R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img
+            ,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img
+            ,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img,R.drawable.law_img
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +25,12 @@ public class LawInfoActivity extends AppCompatActivity {
         sec_code=getResources().getStringArray(R.array.Section_code_number);
         Log.v(Tag,"The code working ");
         sec_name=getResources().getStringArray(R.array.Section_heading);
+        sec_description=getResources().getStringArray(R.array.section_short_description);
         Log.v(Tag,"The code working again ");
 
         //creating my adapter object
         //passing the parameter first is the context which is main activity therefor we type this
-        LawInfoAdapter LawInfoAdapter=new LawInfoAdapter(this,sec_code,sec_name,images);
+        LawInfoAdapter LawInfoAdapter=new LawInfoAdapter(this,sec_code,sec_name,sec_description,images);
         //setting my adaptor
         recyclerView.setAdapter(LawInfoAdapter);
         //layout manager
