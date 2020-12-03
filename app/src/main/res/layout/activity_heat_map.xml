@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map_fragment"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HeatMap" />
+    android:orientation="vertical"
+    tools:context=".HeatMap">
+
+    <fragment
+        android:id="@+id/mapNearBy"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnGetDirection"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetDirection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <Button
+        android:id="@+id/btnGetDirection"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="41dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="Get Direction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Swapper"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Swapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="40dp"
+        android:text="Swapper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGetDirection" />
+</androidx.constraintlayout.widget.ConstraintLayout>
