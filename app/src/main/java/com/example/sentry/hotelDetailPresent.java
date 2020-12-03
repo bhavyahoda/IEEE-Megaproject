@@ -2,10 +2,14 @@ package com.example.sentry;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +21,7 @@ public class hotelDetailPresent extends AppCompatActivity {
     String Tag="i am getting the data";
     String data1,data2,data3,data4,data5,data6,data8;
     int myImageView;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +70,15 @@ public class hotelDetailPresent extends AppCompatActivity {
         description.setMovementMethod(new ScrollingMovementMethod());
         rating.setText(data2);
         price.setText(data3);
-        link.setText(data5);
+        link.setText("Click me");
+        link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browseIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(data5));
+                context.startActivity(browseIntent);
+                Log.v(Tag, data5);
+            }
+        });
         link.setMovementMethod(LinkMovementMethod.getInstance());
         location.setText(data4);
         phoneNumber.setText(data8);

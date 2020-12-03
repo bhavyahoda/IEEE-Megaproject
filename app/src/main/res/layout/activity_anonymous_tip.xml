@@ -2,8 +2,43 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/save_tip"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".anonymousTip">
+
+
+    <Button
+        android:id="@+id/make_tip"
+        android:layout_width="285dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="56dp"
+        android:text="Make Anonymous Tip"
+        app:layout_constraintBottom_toTopOf="@+id/sd_show_class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/see_tip"
+        android:layout_width="278dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="202dp"
+        android:text="See Anonymous Tip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd_show_class" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

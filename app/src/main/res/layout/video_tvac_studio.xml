@@ -3,23 +3,68 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/list_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:id="@+id/article_up_name"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:text="ARTICLE NAME"
+        app:layout_constraintBottom_toTopOf="@+id/article_up_email"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/list_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:id="@+id/article_up_link"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="96dp"
+        android:text="ARTICLE LINK"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_name" />
+        app:layout_constraintTop_toBottomOf="@+id/article_up_Brief_Description" />
+
+    <TextView
+        android:id="@+id/article_up_Brief_Description"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:text="BRIEF DESCRIPTION"
+        app:layout_constraintBottom_toTopOf="@+id/article_up_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_up_title" />
+
+    <TextView
+        android:id="@+id/article_up_title"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:text="TITLE"
+        app:layout_constraintBottom_toTopOf="@+id/article_up_Brief_Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_up_email" />
+
+    <TextView
+        android:id="@+id/article_up_email"
+        android:layout_width="361dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="5dp"
+        android:text="EMAIL"
+        app:layout_constraintBottom_toTopOf="@+id/article_up_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_up_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -587,7 +587,8 @@ for the reception and care of women or children.
         <item>visit the channel to build your immunity</item>
     </string-array>
     <string-array name="the_link">
-        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCsE_m2z1NrvF2ImeNWh84mw">Click me!</a></item>
+        <!--<item name="link">i accept it<a href="https://www.youtube.com/channel/UCsE_m2z1NrvF2ImeNWh84mw">Click me!</a></item>-->
+        <item name="link"><a>"https://www.youtube.com/c/AjaDang/featured"</a></item>
         <item name="link">i accept it<a href="https://www.youtube.com/c/AjaDang/featured">Click me!</a></item>
         <item name="link">i accept it<a href="https://www.youtube.com/c/AndoMierzwaAKASenseiAndo/featured">Click me!</a></item>
         <item name="link">i accept it<a href="https://www.youtube.com/c/ContactCombatIndia/featured">Click me!</a></item>
@@ -762,7 +763,8 @@ for the reception and care of women or children.
             There is a low-key restaurant. Other amenities include meeting rooms and event space, some of which can be provided outdoors.</item>
     </string-array>
     <string-array name="hotelLink">
-        <item>link</item>
+        <!--<item name="link"><a>"https://www.youtube.com/c/AjaDang/featured"</a></item>-->
+        <!--<item name ="link"><a>"https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&nbsp;aPriceRange%5Bfrom%5D=0&nbsp;aPriceRange%5Bto%5D=0&nbsp;iRoomType=7&nbsp;aRooms%5B0%5D%5Badults%5D=2&nbsp;cpt2=1093350%2F100&nbsp;hasList=1&nbsp;hasMap=1&nbsp;bIsSeoPage=0&nbsp;sortingId=1&nbsp;slideoutsPageItemId=&nbsp;iGeoDistanceLimit=20000&nbsp;address=&nbsp;addressGeoCode=&nbsp;offset=0&nbsp;ra=&nbsp;overlayMode="</a></item>-->
         <item>link</item>
         <item>link</item>
         <item>link</item>
@@ -775,7 +777,7 @@ for the reception and care of women or children.
         <item>link</item>
         <item>link</item>
     </string-array>
-        <!--<item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=1093350%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
+    <!--<item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=1093350%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
         <item name ="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=2664572%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
         <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=4001068%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
         <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=15515484%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>

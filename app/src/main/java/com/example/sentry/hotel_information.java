@@ -10,6 +10,7 @@ import android.util.Log;
 public class hotel_information extends AppCompatActivity {
     private RecyclerView recyclerView;
     String hotel_name[],hotel_rating[],hotel_price[],location[],link[],hotel_detail[],city_name[],hotel_number[];
+
     String Tag ="my recycler data";
     int images[]={R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,
             R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,

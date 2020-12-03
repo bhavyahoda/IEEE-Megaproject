@@ -7,5 +7,6 @@ data class SelfDefense (
     var Work: String = "",
     var Link: String = "",
     var Phone: String="",
+    var Price: String="",
     var Date: String="",
 )

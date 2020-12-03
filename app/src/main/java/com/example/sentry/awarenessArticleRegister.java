@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ import com.example.sentry.model.Article;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
@@ -23,12 +25,13 @@ public class awarenessArticleRegister extends AppCompatActivity {
     Button save;
     String userId;
     Article push_data;
+    String Tag="articleuploadshow";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awareness_article_register);
         user = FirebaseAuth.getInstance().getCurrentUser();
-        nameTextView = findViewById(R.id.name_article);
+        nameTextView = findViewById(R.id.name_video);
         emailTextView = findViewById(R.id.email_aware);
         titleTextView = findViewById(R.id.title_of_article);
         briefTextView = findViewById(R.id.description);
@@ -66,10 +69,11 @@ public class awarenessArticleRegister extends AppCompatActivity {
         }
 
         data_storage = FirebaseFirestore.getInstance();
-        CollectionReference documentReference = data_storage.collection("users").document(userId).collection("articles");
+        DocumentReference documentReference = data_storage.collection("articles").document();
+        Log.v(Tag,"ya i am entering");
         push_data = new Article();
         set_data();
-        documentReference.add(push_data);
+        documentReference.set(push_data);
         nameTextView.setText("");
         linkTextView.setText("");
         emailTextView.setText("");

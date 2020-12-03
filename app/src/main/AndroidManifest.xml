@@ -15,9 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sentry">
-        <activity android:name=".hotelDetailPresent"
-            android:parentActivityName=".hotel_information"
-            android:label="Details"/>
+        <activity android:name=".SeeAnonymousTip"></activity>
+        <activity android:name=".MakeAnonymousTip" />
+        <activity
+            android:name=".hotelDetailPresent"
+            android:label="Details"
+            android:parentActivityName=".hotel_information" />
         <activity android:name=".anonymousTip" />
         <activity android:name=".awarenessArticleRegister" />
         <activity android:name=".articleUploadedShow" />

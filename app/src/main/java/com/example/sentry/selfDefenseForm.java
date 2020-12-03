@@ -18,7 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class selfDefenseForm extends AppCompatActivity {
-    private EditText nameTextView, AboutTextView, PhoneTextView, DateTextView, linkTextView,WorkTextView;
+    private EditText nameTextView, AboutTextView, PhoneTextView, DateTextView, linkTextView,WorkTextView,priceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;
     Button save;
@@ -35,11 +35,13 @@ public class selfDefenseForm extends AppCompatActivity {
         DateTextView = findViewById(R.id.date);
         linkTextView = findViewById(R.id.Link_location);
         WorkTextView = findViewById(R.id.Reference_work);
+        priceTextView =findViewById(R.id.price_self_def);
         save = findViewById(R.id.save_info);
         userId = user.getUid();
         save.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 registerSelfDefense();
             }
         });
@@ -66,6 +68,10 @@ public class selfDefenseForm extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please enter link !!", Toast.LENGTH_LONG).show();
             return;
         }
+        if (TextUtils.isEmpty(priceTextView.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter Price !!", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (TextUtils.isEmpty(WorkTextView.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Please enter reference work!!", Toast.LENGTH_LONG).show();
             return;
@@ -82,6 +88,7 @@ public class selfDefenseForm extends AppCompatActivity {
         PhoneTextView.setText("");
         WorkTextView.setText("");
         DateTextView.setText("");
+        priceTextView.setText("");
         finish();
     }
 
@@ -91,6 +98,7 @@ public class selfDefenseForm extends AppCompatActivity {
         push_data.setAbout(AboutTextView.getText().toString());
         push_data.setDate(DateTextView.getText().toString());
         push_data.setWork(WorkTextView.getText().toString());
+        push_data.setPrice(priceTextView.getText().toString());
         push_data.setPhone(PhoneTextView.getText().toString());
     }
 }

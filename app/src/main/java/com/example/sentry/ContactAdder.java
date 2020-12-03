@@ -36,5 +36,6 @@ public class ContactAdder extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

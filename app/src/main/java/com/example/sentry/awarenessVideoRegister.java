@@ -13,11 +13,12 @@ import com.example.sentry.model.Counselling;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class awarenessVideoRegister extends AppCompatActivity {
-    private EditText nameTextView, qualificationTextView, topicTextView, timeTextView, linkTextView, reasonTextView;
+    private EditText nameTextView, qualificationTextView, topicTextView, timeTextView, linkTextView, reasonTextView,PriceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;
     Button save;
@@ -28,12 +29,13 @@ public class awarenessVideoRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_awareness_video_register);
         user = FirebaseAuth.getInstance().getCurrentUser();
-        nameTextView = findViewById(R.id.name_article);
+        nameTextView = findViewById(R.id.name_video);
         qualificationTextView = findViewById(R.id.email_aware);
         topicTextView = findViewById(R.id.title_of_article);
         timeTextView = findViewById(R.id.description);
         linkTextView = findViewById(R.id.article_link);
         reasonTextView = findViewById(R.id.reason);
+        PriceTextView=findViewById(R.id.price_video);
         save = findViewById(R.id.save_article);
         userId = user.getUid();
         save.setOnClickListener(new View.OnClickListener() {
@@ -65,22 +67,27 @@ public class awarenessVideoRegister extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please enter link !!", Toast.LENGTH_LONG).show();
             return;
         }
+        if (TextUtils.isEmpty(PriceTextView.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter Price !!", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (TextUtils.isEmpty(reasonTextView.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Please enter reason why anyone should attend!!", Toast.LENGTH_LONG).show();
             return;
         }
 
         data_storage = FirebaseFirestore.getInstance();
-        CollectionReference documentReference = data_storage.collection("users").document(userId).collection("counselling");
+        DocumentReference documentReference = data_storage.collection("counselling").document();
         push_data = new Counselling();
         set_data();
-        documentReference.add(push_data);
+        documentReference.set(push_data);
         nameTextView.setText("");
         linkTextView.setText("");
         qualificationTextView.setText("");
         timeTextView.setText("");
         reasonTextView.setText("");
         topicTextView.setText("");
+        PriceTextView.setText("");
         finish();
     }
 
@@ -90,6 +97,7 @@ public class awarenessVideoRegister extends AppCompatActivity {
         push_data.setQualification(qualificationTextView.getText().toString());
         push_data.setTime(timeTextView.getText().toString());
         push_data.setReason(reasonTextView.getText().toString());
+        push_data.setPrice(PriceTextView.getText().toString());
         push_data.setTopic(topicTextView.getText().toString());
     }
 }

@@ -6,5 +6,6 @@ data class Counselling(
         var Topic: String = "",
         var Link: String = "",
         var Time: String="",
+        var Price: String="",
         var Reason: String="",
 )

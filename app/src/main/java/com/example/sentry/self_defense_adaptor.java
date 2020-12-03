@@ -1,6 +1,8 @@
 package com.example.sentry;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -47,8 +49,16 @@ public class self_defense_adaptor extends RecyclerView.Adapter<self_defense_adap
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.vid_title.setText(info1[position]);
         holder.vid_description.setText(info2[position]);
-        holder.vid_link.setText(info3[position]);
+        holder.vid_link.setText("Click It");
         holder.self_vid_image.setImageResource(photo[position]);
+        holder.vid_link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browseIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(info3[position]));
+                context.startActivity(browseIntent);
+                Log.v(Tag, info3[position]);
+            }
+        });
         Log.v(Tag,"I entered on view holder");
     }
 
@@ -67,7 +77,7 @@ public class self_defense_adaptor extends RecyclerView.Adapter<self_defense_adap
             vid_description=itemView.findViewById(R.id.vid_description);
             vid_description.setMovementMethod(new ScrollingMovementMethod());
             vid_link=itemView.findViewById(R.id.self_vid_link);
-            vid_link.setMovementMethod(LinkMovementMethod.getInstance());
+            //vid_link.setMovementMethod(LinkMovementMethod.getInstance());
             self_vid_image=itemView.findViewById(R.id.self_vid_image);
         }
     }
