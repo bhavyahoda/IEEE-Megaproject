@@ -13,3 +13,9 @@
 
 7. idk_now=(India_Direction_Knowledge) this subclass shows the nearby hospitals, police station, fire station from our current location.
 
+8. Heatmap displaying multiple routes added and merged to the main project.
+
+9. Forms created and the details displayed with the help of recyclerview after retrieving data from Firebase Firestore database.
+
+10. For API key contact the owner.
+
