@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Dashboard extends AppCompatActivity {
-    Button logout,heatmap,sos_button,static_data;
+    Button logout,heatmap,sos_button,static_data,nearby_places;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +51,15 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(getApplicationContext(),Database.class);
+                //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
+                startActivity(intent);
+            }
+        });
+        nearby_places= findViewById(R.id.nearby_places);
+        nearby_places.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getApplicationContext(),NearbyPlacesActivity.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }

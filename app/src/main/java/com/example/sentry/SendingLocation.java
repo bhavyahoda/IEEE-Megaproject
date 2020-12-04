@@ -1,6 +1,7 @@
 package com.example.sentry;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -27,7 +28,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.firebase.database.annotations.Nullable;
 
 public class SendingLocation extends FragmentActivity implements OnMapReadyCallback,
 	GoogleApiClient.ConnectionCallbacks,
@@ -121,7 +121,7 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		markerOptions.position(lat_lang);
 
 		SmsManager sms = SmsManager.getDefault();
-		String phone = "RECEIVER'S PHONE NUMBER HERE";
+		String phone = "YOUR PHONE NUMBER";
 
 		String lat_long = String.valueOf(lat_lang.latitude).concat(" ").concat(String.valueOf(lat_lang.longitude));
 		sms.sendTextMessage(phone, null, lat_long, null, null);

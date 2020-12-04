@@ -97,7 +97,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
         // Output format
         String output = "json";
         // Building the url to the web service
-        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "&key=YOUR API KEY HERE";
+        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "&key=AIzaSyA-I7gY8_aJSz4vF1wWqWdYiqHc1lVORhw";
         return url;
     }
 
