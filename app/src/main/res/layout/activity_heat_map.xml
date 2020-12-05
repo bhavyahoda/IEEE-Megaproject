@@ -8,7 +8,7 @@
     tools:context=".HeatMap">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/To"
         android:layout_width="408dp"
         android:layout_height="65dp"
         android:layout_marginStart="7dp"
@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/From" />
 
     <fragment
         android:id="@+id/mapNearBy"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/To" />
 
     <Button
         android:id="@+id/btnGetDirection"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnGetDirection" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/From"
         android:layout_width="404dp"
         android:layout_height="66dp"
         android:layout_marginStart="7dp"

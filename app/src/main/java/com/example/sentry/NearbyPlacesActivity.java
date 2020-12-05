@@ -96,7 +96,6 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 			checkLocationPermission();
 		}
-
 		Places.initialize(getApplicationContext(), getResources().getString(R.string.map_key));
 
 		loc_name = (EditText) findViewById(R.id.search_text);
@@ -147,7 +146,6 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 			return;
 		}
 	}
-
 	@Override
 	public void onMapReady(GoogleMap googleMap) {
 		mMap = googleMap;
@@ -159,7 +157,6 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 		mMap.setOnMarkerClickListener(this);
 		mMap.setOnMarkerDragListener(this);
 	}
-
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);

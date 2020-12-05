@@ -47,7 +47,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR API KEY HERE" />
+            android:value="your api key" />
 
         <activity android:name=".HeatMap" />
         <activity android:name=".Dashboard" />
