@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         passwordTextView = findViewById(R.id.passowrd);
         login = findViewById(R.id.loginButton);
 
-        // Set on Click Listener on Sign-in button
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // signin existing user
+        // sign-in existing user
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(
                         new OnCompleteListener<AuthResult>() {

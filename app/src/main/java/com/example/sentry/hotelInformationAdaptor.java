@@ -2,8 +2,6 @@ package com.example.sentry;
 
 import android.content.Context;
 import android.content.Intent;
-import android.text.method.LinkMovementMethod;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,7 +57,7 @@ public class hotelInformationAdaptor  extends RecyclerView.Adapter<hotelInformat
             @Override
             public void onClick(View v) {
                 Log.v(Tag,"i am entering button");
-                Intent intent =new Intent(context,hotelDetailPresent.class);
+                Intent intent =new Intent(context, HotelDetailPresent.class);
                 intent.putExtra("data1",data1[position]);
                 intent.putExtra("data2",data2[position]);
                 intent.putExtra("data3",data3[position]);

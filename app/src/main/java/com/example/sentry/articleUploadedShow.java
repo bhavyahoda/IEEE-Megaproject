@@ -18,7 +18,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-public class articleUploadedShow extends AppCompatActivity {
+public class ArticleUploadedShow extends AppCompatActivity {
 
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
@@ -37,24 +37,18 @@ public class articleUploadedShow extends AppCompatActivity {
         setContentView(R.layout.activity_article_uploaded_show);
         firebaseFirestore = FirebaseFirestore.getInstance();
         mFirestoreList = findViewById(R.id.firestore_list);
-        //firebaseFirestore.collection("users");
-        //Query query=firebaseFirestore.collection("users").document().collection("articles");
         Query query=firebaseFirestore.collection("articles");
         Log.v(Tag,"query printed "+query.toString());
         FirestoreRecyclerOptions<Article>options=new FirestoreRecyclerOptions.Builder<Article>()
                 .setQuery(query, Article.class)
                 .build();
-
-
         adapter = new FirestoreRecyclerAdapter<Article, ArticlesViewHolder>(options) {
             @NonNull
             @Override
             public ArticlesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.video_tvac_studio,parent,false);
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.article_uploaded_show_row,parent,false);
                 return new ArticlesViewHolder(view);
-
             }
-
             @Override
             protected void onBindViewHolder(@NonNull ArticlesViewHolder holder, int position, @NonNull Article model) {
                     holder.article_name.setText(model.getName());
@@ -68,9 +62,7 @@ public class articleUploadedShow extends AppCompatActivity {
         mFirestoreList.setHasFixedSize(true);
         mFirestoreList.setLayoutManager(new LinearLayoutManager(this));
         mFirestoreList.setAdapter(adapter);
-
     }
-
     private class ArticlesViewHolder extends RecyclerView.ViewHolder{
         private TextView article_name;
         private TextView article_email;

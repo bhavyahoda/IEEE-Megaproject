@@ -23,9 +23,8 @@ public class sde_video extends AppCompatActivity {
         vid_title=getResources().getStringArray(R.array.video_title);
         vid_description=getResources().getStringArray(R.array.video_description);
         vid_links=getResources().getStringArray(R.array.the_link);
-        //Log.v(Tag,"the video Link"+vid_links);
         Log.v(Tag,"The code working again "+vid_links[0]);
-        self_defense_adaptor self_defense_adaptor =new self_defense_adaptor(this,vid_title,vid_description,vid_links,selfDefenseImages);
+        SelfDefenseAdaptor self_defense_adaptor =new SelfDefenseAdaptor(this,vid_title,vid_description,vid_links,selfDefenseImages);
         recyclerView.setAdapter(self_defense_adaptor);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

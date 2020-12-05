@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".self_defense">
+    tools:context=".SelfDefense">
 
     <Button
         android:id="@+id/sd_vid"

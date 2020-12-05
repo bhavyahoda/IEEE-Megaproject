@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class hotel_info extends AppCompatActivity {
+public class HotelInfo extends AppCompatActivity {
     Button hot_info,hotel_regis,hotel_show;
 
     @Override
@@ -20,7 +20,7 @@ public class hotel_info extends AppCompatActivity {
         hot_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),hotel_information.class);
+                Intent intent= new Intent(getApplicationContext(), HotelInformation.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -28,7 +28,7 @@ public class hotel_info extends AppCompatActivity {
         hotel_regis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),Hotel_registration.class);
+                Intent intent= new Intent(getApplicationContext(), HotelRegistration.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -36,7 +36,7 @@ public class hotel_info extends AppCompatActivity {
         hotel_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),hotel_show.class);
+                Intent intent= new Intent(getApplicationContext(), HotelShow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }

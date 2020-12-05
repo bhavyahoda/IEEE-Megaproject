@@ -13,11 +13,12 @@ import com.example.sentry.model.SelfDefense;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
 
-public class selfDefenseForm extends AppCompatActivity {
+public class SelfDefenseForm extends AppCompatActivity {
     private EditText nameTextView, AboutTextView, PhoneTextView, DateTextView, linkTextView,WorkTextView,priceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;
@@ -78,10 +79,10 @@ public class selfDefenseForm extends AppCompatActivity {
         }
 
         data_storage = FirebaseFirestore.getInstance();
-        CollectionReference documentReference = data_storage.collection("users").document(userId).collection("self_defense");
+        DocumentReference documentReference = data_storage.collection("self_defense").document();
         push_data = new SelfDefense();
         set_data();
-        documentReference.add(push_data);
+        documentReference.set(push_data);
         nameTextView.setText("");
         linkTextView.setText("");
         AboutTextView.setText("");

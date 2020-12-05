@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class self_defense extends AppCompatActivity {
+public class SelfDefense extends AppCompatActivity {
     Button sd_regis,sd_vid,sd_show_class;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class self_defense extends AppCompatActivity {
         sd_regis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),selfDefenseForm.class);
+                Intent intent= new Intent(getApplicationContext(), SelfDefenseForm.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -35,7 +35,7 @@ public class self_defense extends AppCompatActivity {
         sd_show_class.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),ade_show_class.class);
+                Intent intent= new Intent(getApplicationContext(), SelfDefenseShow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }

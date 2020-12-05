@@ -22,7 +22,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
 
 public class ContactAdder extends AppCompatActivity {
-    Button send_button;
+    Button send_button,add_contacts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,14 @@ public class ContactAdder extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(getApplicationContext(),SendingLocation.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
+                startActivity(intent);
+            }
+        });
+        add_contacts = findViewById(R.id.add_contacts);
+        add_contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),FillContactsActivity.class);
                 startActivity(intent);
             }
         });

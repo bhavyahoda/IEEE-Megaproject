@@ -3,7 +3,6 @@ package com.example.sentry;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,17 +12,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class self_defense_adaptor extends RecyclerView.Adapter<self_defense_adaptor.MyViewHolder> {
+public class SelfDefenseAdaptor extends RecyclerView.Adapter<SelfDefenseAdaptor.MyViewHolder> {
     String info1[],info2[],info3[];
     int photo[];
     String Tag="hi i am there";
     Context context;
 
     //constructor
-    public self_defense_adaptor(Context ct,String vid_title[],String vid_description[],String vid_links[],int selfDefenseImages[])
+    public SelfDefenseAdaptor(Context ct, String vid_title[], String vid_description[], String vid_links[], int selfDefenseImages[])
     {
         context=ct;
         info1=vid_title;

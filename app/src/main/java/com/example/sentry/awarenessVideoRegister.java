@@ -9,21 +9,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.sentry.model.Counselling;
+import com.example.sentry.model.Videos;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
-public class awarenessVideoRegister extends AppCompatActivity {
+public class AwarenessVideoRegister extends AppCompatActivity {
     private EditText nameTextView, qualificationTextView, topicTextView, timeTextView, linkTextView, reasonTextView,PriceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;
     Button save;
     String userId;
-    Counselling push_data;
+    Videos push_data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,8 +76,8 @@ public class awarenessVideoRegister extends AppCompatActivity {
         }
 
         data_storage = FirebaseFirestore.getInstance();
-        DocumentReference documentReference = data_storage.collection("counselling").document();
-        push_data = new Counselling();
+        DocumentReference documentReference = data_storage.collection("counselling").document(userId);
+        push_data = new Videos();
         set_data();
         documentReference.set(push_data);
         nameTextView.setText("");

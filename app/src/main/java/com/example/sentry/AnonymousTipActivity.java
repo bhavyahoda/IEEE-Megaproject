@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class anonymousTip extends AppCompatActivity {
+public class AnonymousTipActivity extends AppCompatActivity {
     Button seeTip,makeTip;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

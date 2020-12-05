@@ -30,7 +30,7 @@ public class Database extends AppCompatActivity {
         selfdefense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),self_defense.class);
+                Intent intent= new Intent(getApplicationContext(), SelfDefense.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -39,7 +39,7 @@ public class Database extends AppCompatActivity {
         counselling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),awareness_counselling.class);
+                Intent intent= new Intent(getApplicationContext(), AwarenessCounselling.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -48,7 +48,7 @@ public class Database extends AppCompatActivity {
         hotel_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),hotel_info.class);
+                Intent intent= new Intent(getApplicationContext(), HotelInfo.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -57,7 +57,7 @@ public class Database extends AppCompatActivity {
         anonymous_tip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),anonymousTip.class);
+                Intent intent= new Intent(getApplicationContext(), AnonymousTipActivity.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }

@@ -590,25 +590,25 @@ for the reception and care of women or children.
     <string-array name="the_link">
         <!--<item name="link">i accept it<a href="https://www.youtube.com/channel/UCsE_m2z1NrvF2ImeNWh84mw">Click me!</a></item>-->
         <item name="link"><a>"https://www.youtube.com/c/AjaDang/featured"</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/AjaDang/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/AndoMierzwaAKASenseiAndo/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/ContactCombatIndia/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/FinalRoundTraining/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/user/GracieBreakdown/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/JaniceHung/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/user/LexFitness">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCgG8-OKq-s734FwZWeTt5rA/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/c/masterwongsystem/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCnkE7xO-UpSBvsCRl9sQz-w/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/user/pibindia/featured">Click me!</a></item>
-        <item name="link">i accept it<a href="https://www.youtube.com/channel/UCO6CNqmNJBnRbgQ2R61X-Wg/featured">Click me!</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/AjaDang/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/AndoMierzwaAKASenseiAndo/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/ContactCombatIndia/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/FinalRoundTraining/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/user/GracieBreakdown/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/JaniceHung/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/user/LexFitness"</a></item>
+        <item name="link"><a>"https://www.youtube.com/channel/UCgG8-OKq-s734FwZWeTt5rA/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/c/masterwongsystem/featured"</a></item>
+        <item name="link"><a>""https://www.youtube.com/channel/UCnkE7xO-UpSBvsCRl9sQz-w/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/user/pibindia/featured"</a></item>
+        <item name="link"><a>"https://www.youtube.com/channel/UCO6CNqmNJBnRbgQ2R61X-Wg/featured"</a></item>
     </string-array>
     <string-array name="hotelName">
         <item>HOTEL ARYA</item>
         <item>Hotel GREEN ACRES </item>
         <item>HOTEL AKASHDEEP </item>
         <item>HOTEL PRATAP GRAND </item>
-        <item>Holiday Inn Express Gurugram Sector 50 </item>
+        <item>Holiday Inn Express, Gurugram Sector 50 </item>
         <item>Staayz Premium - Hotel </item>
         <item>Lemon Tree Premier 2, Gurugram </item>
         <item>Hotel City Premier </item>
@@ -764,31 +764,17 @@ for the reception and care of women or children.
             There is a low-key restaurant. Other amenities include meeting rooms and event space, some of which can be provided outdoors.</item>
     </string-array>
     <string-array name="hotelLink">
-        <!--<item name="link"><a>"https://www.youtube.com/c/AjaDang/featured"</a></item>-->
-        <!--<item name ="link"><a>"https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&nbsp;aPriceRange%5Bfrom%5D=0&nbsp;aPriceRange%5Bto%5D=0&nbsp;iRoomType=7&nbsp;aRooms%5B0%5D%5Badults%5D=2&nbsp;cpt2=1093350%2F100&nbsp;hasList=1&nbsp;hasMap=1&nbsp;bIsSeoPage=0&nbsp;sortingId=1&nbsp;slideoutsPageItemId=&nbsp;iGeoDistanceLimit=20000&nbsp;address=&nbsp;addressGeoCode=&nbsp;offset=0&nbsp;ra=&nbsp;overlayMode="</a></item>-->
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
-        <item>link</item>
+        <item name="the_link"><a>"https://www.tripadvisor.in/Hotel_Review-g662320-d735777-Reviews-Hotel_Arya-Ranchi_Ranchi_District_Jharkhand.html"</a></item>
+        <item name="the_link"><a>"https://www.hotelgreenacresranchi.com/"</a></item>
+        <item name="the_link"><a>"https://www.tripadvisor.in/Hotel_Review-g662320-d3708746-Reviews-Akashdeep_Hotel-Ranchi_Ranchi_District_Jharkhand.html"</a></item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/pratap-grand-hotel-in-ranchi-1197151600064210097/"</a></item>
+        <item name="the_link"><a>"https://www.ihg.com/holidayinn/hotels/us/en/gurgaon/delgs/hoteldetail"</a></item>
+        <item name="the_link"><a>"https://staayzhotels.com/"</a></item>
+        <item name="the_link"><a>"https://m.lemontreehotels.com/lemon-tree-premier/gurgaon/city-center-north-gurgaon.aspx"</a></item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/city-premier-hotel-in-gurgaon-3705696203720870809/"</a></item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/pods-and-beyond-hotel-in-jamshedpur-6384171566318110838/"</a>link</item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/nataraj-hotel-in-jamshedpur-6835646547489489640/"</a></item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/the-alcor-hotel-in-jamshedpur-6270341719974996226/"</a></item>
+        <item name="the_link"><a>"https://www.goibibo.com/hotels/jk-residency-jamshedpur-hotel-in-jamshedpur-4793161544999669224/"</a></item>
     </string-array>
-    <!--<item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=1093350%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
-        <item name ="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=2664572%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
-        <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=4001068%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
-        <item name="The Link"><a href="https://www.trivago.in/?aDateRange%5Barr%5D=2020-12-16&aDateRange%5Bdep%5D=2020-12-19&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=15515484%2F100&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=&overlayMode=">CLICK ME!</a></item>
-        <item name="The Link"><a href="</item>
-        <item>I am the title</item>
-        <item>I am the title</item>
-        <item>I am the title</item>
-        <item>I am the title</item>
-        <item>I am the title</item>
-        <item>I am the title</item>
-    </string-array>
-    -->
 </resources>

@@ -13,8 +13,13 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sentry.model.Contact;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -28,12 +33,24 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.local.QueryEngine;
 
 public class SendingLocation extends FragmentActivity implements OnMapReadyCallback,
 	GoogleApiClient.ConnectionCallbacks,
 	GoogleApiClient.OnConnectionFailedListener,
 	LocationListener {
-
+	private FirebaseFirestore data_storage;
+	String userID;
+	private FirebaseUser mAuth;
 	private GoogleMap mMap;
 	private  GoogleApiClient Client;
 	private LocationRequest locationRequest;
@@ -63,14 +80,14 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		switch (requestCode) {
 		case PERMISSION_REQUEST_LOCATION_CODE:
 			if (grantResults.length > 0  && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-				//permission is granted
+
 				if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 					if (Client == null) {
 						buildGoogleApiClient();
 					}
 					mMap.setMyLocationEnabled(true);
 				}
-			} else { //permission denied
+			} else {
 				Toast.makeText(this, "Permission denied" , Toast.LENGTH_LONG).show();
 			}
 			return;
@@ -121,11 +138,33 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		markerOptions.position(lat_lang);
 
 		SmsManager sms = SmsManager.getDefault();
-		String phone = "YOUR PHONE NUMBER";
-
-		String lat_long = String.valueOf(lat_lang.latitude).concat(" ").concat(String.valueOf(lat_lang.longitude));
-		sms.sendTextMessage(phone, null, lat_long, null, null);
-		markerOptions.title(("you are here now"));
+		mAuth = FirebaseAuth.getInstance().getCurrentUser();
+		data_storage = FirebaseFirestore.getInstance();
+		userID=mAuth.getUid();
+		DocumentReference documentReference=data_storage.collection("contacts").document(userID);
+		documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+			@Override
+			public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException e) {
+				String lat_long="I AM IN A PROBLEM. GIVEN ARE MY CURRENT LOCATION COORDINATES, PLEASE COME AND HELP ME OUT!!!!!!!\n";
+				lat_long += String.valueOf(lat_lang.latitude).concat(" ").concat(String.valueOf(lat_lang.longitude));
+				if(value.getString("number5")!=null) {
+					sms.sendTextMessage(value.getString("number5"), null, lat_long, null, null);
+				}
+				if(value.getString("number4")!=null) {
+					sms.sendTextMessage(value.getString("number4"), null, lat_long, null, null);
+				}
+				if(value.getString("number3")!=null) {
+					sms.sendTextMessage(value.getString("number3"), null, lat_long, null, null);
+				}
+				if(value.getString("number2")!=null) {
+					sms.sendTextMessage(value.getString("number2"), null, lat_long, null, null);
+				}
+				if(value.getString("number1")!=null) {
+					sms.sendTextMessage(value.getString("number1"), null, lat_long, null, null);
+				}
+			}
+		});
+		markerOptions.title(("You are here now"));
 		markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
 
 		//current marker has been assigned the marker option declared above
@@ -136,17 +175,11 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		mMap.moveCamera(CameraUpdateFactory.newLatLng(lat_lang));
 		mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
-		//stopping the updates after we get the current location of ourself
+		//stopping the updates after we get the current location of ourselves
 		if (Client != null) {
-			//if client is null means there is no location now that we got
-			//not equal to null means some location has been administered by the client
+
 			LocationServices.FusedLocationApi.removeLocationUpdates(Client, this);
 		}
-
-
-
-
-
 
 	}
 
@@ -179,17 +212,9 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 			//if permission is not granted we ask for the permission an educational message is shown as to why the permission is required
 			//this will return true if the user had asked for the permission before and denied for it,and is now trying to access the feature again
 			if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
-				//after reading the message the user knows why we need permission now the dialogue box appears to
-				//to the user to choose the permission and this time we check it with the request code to match that the permission is granted for the work we want to o ith the permission
-				//new string will take a array of permission that we have to give
-				/* new AlertDialog.Builder(this)
-				          .setTitle("Permission is needed!")
-				          .setMessage("This permission id needed so that the app can show you your current location ")
-				          .se*/
 				ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_LOCATION_CODE);
 
 			}
-
 			else {
 				ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_LOCATION_CODE);
 			}

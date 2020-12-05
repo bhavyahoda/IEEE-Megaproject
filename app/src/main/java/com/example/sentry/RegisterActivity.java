@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task)
                     {
                         if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Registration successful!!", Toast.LENGTH_LONG).show();
                             userID = mAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = data_storage.collection("users").document(userID);
                             push = new User();

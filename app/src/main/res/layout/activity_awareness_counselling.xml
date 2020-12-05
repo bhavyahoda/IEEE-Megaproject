@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".awareness_counselling">
+    tools:context=".AwarenessCounselling">
 
     <Button
         android:id="@+id/aw_co_ar_regis"

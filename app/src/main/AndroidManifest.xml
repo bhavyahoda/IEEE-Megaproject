@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,32 +17,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sentry">
-        <activity android:name=".SeeAnonymousTip"></activity>
+        <activity android:name=".SeeAnonymousTip" />
         <activity android:name=".MakeAnonymousTip" />
         <activity
-            android:name=".hotelDetailPresent"
+            android:name=".HotelDetailPresent"
             android:label="Details"
-            android:parentActivityName=".hotel_information" />
-        <activity android:name=".anonymousTip" />
-        <activity android:name=".awarenessArticleRegister" />
-        <activity android:name=".articleUploadedShow" />
-        <activity android:name=".awarenessVideoRegister" />
-        <activity android:name=".videoUploadedshow" />
-        <activity android:name=".hotel_show" />
-        <activity android:name=".Hotel_registration" />
-        <activity android:name=".hotel_information" />
-        <activity android:name=".ade_show_class" />
+            android:parentActivityName=".HotelInformation" />
+        <activity android:name=".AnonymousTipActivity" />
+        <activity android:name=".AwarenessArticleRegister" />
+        <activity android:name=".ArticleUploadedShow" />
+        <activity android:name=".AwarenessVideoRegister" />
+        <activity android:name=".VideoUploadedshow" />
+        <activity android:name=".HotelShow" />
+        <activity android:name=".HotelRegistration" />
+        <activity android:name=".HotelInformation" />
+        <activity android:name=".SelfDefenseShow" />
         <activity android:name=".sde_video" />
-        <activity android:name=".hotel_info" />
-        <activity android:name=".awareness_counselling" />
-        <activity android:name=".selfDefenseForm" />
-        <activity android:name=".self_defense" />
+        <activity android:name=".HotelInfo" />
+        <activity android:name=".AwarenessCounselling" />
+        <activity android:name=".SelfDefenseForm" />
+        <activity android:name=".SelfDefense" />
         <activity android:name=".Database" />
         <activity android:name=".LawDetailActivity" />
         <activity android:name=".LawInfoActivity" />
         <activity android:name=".SendingLocation" />
         <activity android:name=".ContactAdder" />
         <activity android:name=".NearbyPlacesActivity" />
+        <activity android:name=".FillContactsActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

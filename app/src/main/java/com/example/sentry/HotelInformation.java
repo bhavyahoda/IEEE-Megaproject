@@ -7,14 +7,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 
-public class hotel_information extends AppCompatActivity {
+public class HotelInformation extends AppCompatActivity {
     private RecyclerView recyclerView;
     String hotel_name[],hotel_rating[],hotel_price[],location[],link[],hotel_detail[],city_name[],hotel_number[];
 
     String Tag ="my recycler data";
-    int images[]={R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,
-            R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,R.drawable.hayaat,
-            R.drawable.hayaat,R.drawable.hayaat,
+    int images[]={R.drawable.arya,R.drawable.green_acres,R.drawable.akashdeep,
+            R.drawable.pratap_grand,R.drawable.hotel_inn,R.drawable.stayzz_hotel,R.drawable.lemon_tree,
+            R.drawable.hotel_premier,R.drawable.pod_n_beyond,R.drawable.hotel_natraj,R.drawable.alcor_hotel,
+            R.drawable.j_k_residency
     };
 
     @Override

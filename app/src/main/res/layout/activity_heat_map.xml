@@ -7,6 +7,21 @@
     android:orientation="vertical"
     tools:context=".HeatMap">
 
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="408dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="To"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
     <fragment
         android:id="@+id/mapNearBy"
         android:name="com.google.android.gms.maps.MapFragment"
@@ -16,16 +31,14 @@
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/btnGetDirection"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <Button
         android:id="@+id/btnGetDirection"
         android:layout_width="225dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="41dp"
         android:background="?attr/selectableItemBackground"
         android:text="Get Direction"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,4 +55,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnGetDirection" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="404dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="From"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

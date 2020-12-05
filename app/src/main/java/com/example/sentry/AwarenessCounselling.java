@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class awareness_counselling extends AppCompatActivity {
+public class AwarenessCounselling extends AppCompatActivity {
     Button video_show,video_register,article_show,article_register,delete;
     private FirebaseFirestore data_storage;
     String userId;
@@ -31,7 +31,7 @@ public class awareness_counselling extends AppCompatActivity {
         video_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),videoUploadedshow.class);
+                Intent intent= new Intent(getApplicationContext(), VideoUploadedshow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -39,7 +39,7 @@ public class awareness_counselling extends AppCompatActivity {
         video_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),awarenessVideoRegister.class);
+                Intent intent= new Intent(getApplicationContext(), AwarenessVideoRegister.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -47,7 +47,7 @@ public class awareness_counselling extends AppCompatActivity {
         article_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),articleUploadedShow.class);
+                Intent intent= new Intent(getApplicationContext(), ArticleUploadedShow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -55,7 +55,7 @@ public class awareness_counselling extends AppCompatActivity {
         article_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),awarenessArticleRegister.class);
+                Intent intent= new Intent(getApplicationContext(), AwarenessArticleRegister.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }

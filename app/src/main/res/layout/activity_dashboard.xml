@@ -54,6 +54,7 @@
         android:layout_marginBottom="96dp"
         android:text="HeatMap"
         app:layout_constraintBottom_toTopOf="@+id/Static_database"
+        app:layout_constraintEnd_toStartOf="@+id/SOS"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

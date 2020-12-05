@@ -14,6 +14,7 @@ import com.example.sentry.model.AnonymousTip;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MakeAnonymousTip extends AppCompatActivity {
@@ -57,10 +58,10 @@ public class MakeAnonymousTip extends AppCompatActivity {
             return;
         }
         data_storage = FirebaseFirestore.getInstance();
-        CollectionReference documentReference = data_storage.collection("users").document(userId).collection("tip");
+        DocumentReference documentReference = data_storage.collection("tip").document(userId);
         push_data = new AnonymousTip();
         set_data();
-        documentReference.add(push_data);
+        documentReference.set(push_data);
         tip_loc.setText("");
         tip_detail.setText("");
         tip_topic.setText("");

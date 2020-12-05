@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class hotelDetailPresent extends AppCompatActivity {
+public class HotelDetailPresent extends AppCompatActivity {
 
     ImageView main_img ;
     TextView name,description,rating,price,link,phoneNumber,location;
@@ -70,7 +70,7 @@ public class hotelDetailPresent extends AppCompatActivity {
         description.setMovementMethod(new ScrollingMovementMethod());
         rating.setText(data2);
         price.setText(data3);
-        link.setText("Click me");
+        link.setText("Click to see more details");
         link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

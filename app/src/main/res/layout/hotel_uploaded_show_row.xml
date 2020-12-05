@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hotel_see_name"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="NAME OF TEH HOTEL"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_see_c_c_s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_see_c_c_s"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="CITY,STATE,COUNTRY"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_see_link_loc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_see_name" />
+
+    <TextView
+        android:id="@+id/hotel_see_link_loc"
+        android:layout_width="361dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="LOCATION GOOGLE MAPS LINK"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_see_min_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_see_c_c_s" />
+
+    <TextView
+        android:id="@+id/hotel_see_min_price"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="MINIMUM PRCE OF ROOM"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_see_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_see_link_loc" />
+
+    <TextView
+        android:id="@+id/hotel_see_rating"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="RATING FROM VERFIED SOURCE"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_see_feature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_see_min_price" />
+
+    <TextView
+        android:id="@+id/hotel_see_feature"
+        android:layout_width="362dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="FEATURE OF HOTEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_see_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
