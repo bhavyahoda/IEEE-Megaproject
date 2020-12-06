@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class AwarenessCounselling extends AppCompatActivity {
-    Button video_show,video_register,article_show,article_register,delete;
+    Button video_show,video_register,article_show,article_register;
     private FirebaseFirestore data_storage;
     String userId;
     FirebaseUser user;
@@ -26,7 +26,7 @@ public class AwarenessCounselling extends AppCompatActivity {
         video_register=findViewById(R.id.aw_co_regis);
         article_show=findViewById(R.id.art_show);
         article_register=findViewById(R.id.aw_co_ar_regis);
-        delete = findViewById(R.id.delete);
+        //delete = findViewById(R.id.delete);
         userId = user.getUid();
         video_show.setOnClickListener(new View.OnClickListener() {
             @Override

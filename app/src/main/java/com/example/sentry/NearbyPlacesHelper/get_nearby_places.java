@@ -3,6 +3,7 @@ package com.example.sentry.NearbyPlacesHelper;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Icon;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 
+import com.example.sentry.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -39,7 +41,6 @@ public class get_nearby_places  extends AsyncTask<Object,String,String> {
     private TextView rat;
     private TextView vic;
     private ImageView ic;
-    private ImageView picture_place;
     private CardView cardView;
 
     public get_nearby_places(Context context, TextView tv,TextView open_now_marker,TextView ratingMarker,TextView VicMarker,ImageView icon,ImageView pic_place,CardView card_view) {
@@ -49,7 +50,6 @@ public class get_nearby_places  extends AsyncTask<Object,String,String> {
         rat=ratingMarker;
         vic=VicMarker;
         ic=icon;
-        picture_place=pic_place;
         cardView=card_view;
         Log.v(TAG,"picture,icon added");
     }
@@ -111,18 +111,29 @@ public class get_nearby_places  extends AsyncTask<Object,String,String> {
             double lat = Double.parseDouble(googlePlace.get("lat"));
             double lng = Double.parseDouble(googlePlace.get("lng"));
             LatLng latLng = new LatLng(lat, lng);
+            /*Icon icon_hospital={
+                        url: "../res/sit_marron.png", // url
+                        scaledSize: new google.maps.Size(width, height), // size
+                        origin: new google.maps.Point(0,0), // origin
+                        anchor: new google.maps.Point(anchor_left, anchor_top) // anchor
+ };
+
+            }*/
            // mMap.setOnMarkerClickListener(this);
             markerOptions.position(latLng);
             markerOptions.title(placeName + " : " + vicinity);
 
             switch (markerType) {
-                case "hospital" : markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                case "hospital" : //markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+                                  markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.hos_icon));
                                 break;
 
-                case "police" : markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                case "police" : //markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+                                  markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.pol_icon));
                     break;
 
-                case "fire_station" : markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
+                case "fire_station" : //markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
+                                        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.fire_stat_icon));
                     break;
 
             }

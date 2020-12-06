@@ -9,16 +9,17 @@
 
     <EditText
         android:id="@+id/To"
-        android:layout_width="408dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="To"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mapNearBy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/From" />
 
@@ -37,8 +38,9 @@
 
     <Button
         android:id="@+id/btnGetDirection"
-        android:layout_width="225dp"
+        android:layout_width="280dp"
         android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
         android:background="?attr/selectableItemBackground"
         android:text="Get Direction"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,8 +51,6 @@
         android:id="@+id/Swapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginEnd="40dp"
         android:text="Swapper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,16 +58,17 @@
 
     <EditText
         android:id="@+id/From"
-        android:layout_width="404dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="From"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/To"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

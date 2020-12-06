@@ -77,6 +77,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 	double end_latitude;
 	double end_longitude;
 	String TAG = "mainActivity";
+	Button bt_search,bt_hospital,bt_police,bt_fire,bt_to;
 	TextView tv;
 	TextView open_now_marker;
 	TextView ratingMarker;
@@ -182,116 +183,126 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 	public void onClick(View v) {
 		//check if user has selected the button
 		//object created
-		Object dataTransfer[] = new Object[3];
 		//an object of get nearby place
 		tv = (TextView) findViewById(R.id.textMarker);
 		open_now_marker = (TextView) findViewById(R.id.open_now_marker);
 		ratingMarker = (TextView) findViewById(R.id.rating_marker);
 		VicMarker = (TextView) findViewById(R.id.vicinityMarker);
-		icon = (ImageView) findViewById(R.id.icon) ;
-		pic_place = (ImageView) findViewById(R.id.pic_place);
+		icon = (ImageView) findViewById(R.id.icon);
 		cardView = (CardView) findViewById(R.id.cardView);
+		//get_nearby_places gns = new get_nearby_places(this, tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+		bt_search = findViewById(R.id.button_search);
+		bt_search.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mMap.clear();
+				Log.v(TAG, "entering the button");
+				//take the text the user had entered
+				//converting the text into string
+				String location = loc_name.getText().toString();
+				Log.v(TAG, "the search button" + location);
+				//storing the results in a list
+				List<Address> searched_places = null;
+				MarkerOptions mo = new MarkerOptions();
+				//check if the user entered something
+				if (!location.equals("")) { //this means that user has entered something
+					//now we use the geocoder class to get the latitude nad longitude of the entered text
+					Geocoder geocoder = new Geocoder(getApplicationContext());
+					try {
+						searched_places = geocoder.getFromLocationName(location, 5);
+						Log.v(TAG, "entering the searched button" + searched_places.size());
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
 
-		get_nearby_places gns = new get_nearby_places(this, tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
-		switch (v.getId()) {
-		case R.id.button_search: {
-			mMap.clear();
-			Log.v(TAG, "entering the button");
-			//take the text the user had entered
-			//converting the text into string
-			String location = loc_name.getText().toString();
-			Log.v(TAG, "the search button" + location);
-			//storing the results in a list
-			List<Address> searched_places = null;
-			MarkerOptions mo = new MarkerOptions();
-			//check if the user entered something
-			if (!location.equals("")) { //this means that user has entered something
-				//now we use the geocoder class to get the latitude nad longitude of the entered text
-				Geocoder geocoder = new Geocoder(this);
-				try {
-					searched_places = geocoder.getFromLocationName(location, 5);
-					Log.v(TAG, "entering the searched button" + searched_places.size());
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-
-				//putting a marker in the location
-				for (int i = 0; i < searched_places.size(); i++) {
-					Address add = searched_places.get(i);
-					LatLng latLng = new LatLng(add.getLatitude(), add.getLongitude());
-					Log.v(TAG, "entering the searched button" + latLng);
-					mo.position(latLng);
-					mo.title("you searched for " + location);
-					mo.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-					mMap.addMarker(mo);
-					//showing camera  focus on last result
-					mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+					//putting a marker in the location
+					for (int i = 0; i < searched_places.size(); i++) {
+						Address add = searched_places.get(i);
+						LatLng latLng = new LatLng(add.getLatitude(), add.getLongitude());
+						Log.v(TAG, "entering the searched button" + latLng);
+						mo.position(latLng);
+						mo.title("you searched for " + location);
+						mo.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+						mMap.addMarker(mo);
+						//showing camera  focus on last result
+						mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+					}
 				}
 			}
-		}
-		break;
-		case R.id.b_hospital:
-			//we are clearing the mark if there is any marker present on the map
-			mMap.clear();
-			String hospital = "hospital";
-			String url = getUrl(latitude, longitude, hospital);
-			//creating an object which is storing two objects the map and the url
-			dataTransfer[0] = mMap;
-			dataTransfer[1] = url;
-			dataTransfer[2] = hospital;
-			//here the execute will call the nearby places api server and execute the methods to show the data performed on our request
-			gns.execute(dataTransfer);
-			Toast.makeText(this, "showing nearby hospitals", Toast.LENGTH_LONG).show();
-			break;
+		});
+		bt_hospital = findViewById(R.id.b_hospital);
+		bt_hospital.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mMap.clear();
+				String hospital = "hospital";
+				String url = getUrl(latitude, longitude, hospital);
+				Object dataTransfer[] = new Object[3];
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				//creating an object which is storing two objects the map and the url
+				dataTransfer[0] = mMap;
+				dataTransfer[1] = url;
+				dataTransfer[2] = hospital;
+				//here the execute will call the nearby places api server and execute the methods to show the data performed on our request
+				gns.execute(dataTransfer);
+				Toast.makeText(getApplicationContext(), "showing nearby hospitals", Toast.LENGTH_LONG).show();
+			}
+		});
+
+		bt_fire = findViewById(R.id.b_fire_station);
+		bt_fire.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mMap.clear();
+				String fireStation = "fire_station";
+				String url = getUrl(latitude, longitude, fireStation);
+				Object dataTransfer[] = new Object[3];
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				dataTransfer[0] = mMap;
+				dataTransfer[1] = url;
+				dataTransfer[2] = fireStation;
+				gns.execute(dataTransfer);
+				Toast.makeText(getApplicationContext(), "showing nearby fire stations", Toast.LENGTH_LONG).show();
+
+			}
+		});
+		bt_police = findViewById(R.id.b_police_station);
+		bt_police.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mMap.clear();
+				String policeStation = "police";
+				String url = getUrl(latitude, longitude, policeStation);
+				Object dataTransfer[] = new Object[3];
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				dataTransfer[0] = mMap;
+				dataTransfer[1] = url;
+				dataTransfer[2] = policeStation;
+				gns.execute(dataTransfer);
+				Toast.makeText(getApplicationContext(), "showing nearby police stations ", Toast.LENGTH_LONG).show();
+			}
+		});
+
+		bt_to = findViewById(R.id.bt_to);
+		bt_to.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				mMap.clear();
+				Object data_transfer[] = new Object[3];
+				String url = getDirectionsUrl();
+				//object of the class
+				GetDirectionsData gdd = new GetDirectionsData();
+				data_transfer[0] = mMap;
+				data_transfer[1] = url;
+				//passing the latitude and longitude value of the destination location
+				data_transfer[2] = new LatLng(end_latitude, end_longitude);
+				gdd.execute(data_transfer);
+				Toast.makeText(getApplicationContext(), "showing distance and duration between the current location and the destination", Toast.LENGTH_LONG).show();
 
 
-		case R.id.b_police_station:
-			mMap.clear();
-			String policeStation = "police";
-			url = getUrl(latitude, longitude, policeStation);
-			dataTransfer[0] = mMap;
-			dataTransfer[1] = url;
-			dataTransfer[2] = policeStation;
-			gns.execute(dataTransfer);
-			Toast.makeText(this, "showing nearby police stations ", Toast.LENGTH_LONG).show();
-			break;
+			}
+		});
 
-		case R.id.b_fire_station:
-			mMap.clear();
-			String fireStation = "fire_station";
-			url = getUrl(latitude, longitude, fireStation);
-			dataTransfer[0] = mMap;
-			dataTransfer[1] = url;
-			dataTransfer[2] = fireStation;
-			gns.execute(dataTransfer);
-			Toast.makeText(this, "showing nearby fire stations", Toast.LENGTH_LONG).show();
-			break;
-
-		case R.id.bt_to:
-			/*mMap.clear();
-			//we add another marker in te same position with the information window
-			MarkerOptions mp = new MarkerOptions();
-			mp.position(new LatLng(end_latitude,end_longitude));
-			mp.title("Destination::");
-			float results[]=new float[10];
-			Location.distanceBetween(last_location.getLatitude(),last_location.getLongitude(),end_latitude,end_longitude,results);
-			mp.snippet("Distance = " +results[0]);
-			mMap.addMarker(mp);
-			break;*/
-			//calculating the distance and duration using directions api
-			dataTransfer = new Object[3];
-			url = getDirectionsUrl();
-			//object of the class
-			GetDirectionsData gdd = new GetDirectionsData();
-			dataTransfer[0] = mMap;
-			dataTransfer[1] = url;
-			//passing the latitude and longitude value of the destination location
-			dataTransfer[2] = new LatLng(end_latitude, end_longitude);
-			gdd.execute(dataTransfer);
-			Toast.makeText(this, "showing distance and duration between the current location and the destination", Toast.LENGTH_LONG).show();
-			break;
-
-		}
 	}
 
 	private String getDirectionsUrl() {

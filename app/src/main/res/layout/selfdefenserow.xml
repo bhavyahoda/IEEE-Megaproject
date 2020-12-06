@@ -23,7 +23,7 @@
             <TextView
                 android:id="@+id/vid_description"
                 android:layout_width="407dp"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:gravity="fill_vertical"
                 android:maxLines="5000000"
                 android:scrollbars="vertical"

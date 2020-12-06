@@ -17,6 +17,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sentry">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.Sentry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SeeAnonymousTip" />
         <activity android:name=".MakeAnonymousTip" />
         <activity
@@ -47,19 +54,13 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="your api key" />
+            android:value="Your API KEY" />
 
         <activity android:name=".HeatMap" />
         <activity android:name=".Dashboard" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

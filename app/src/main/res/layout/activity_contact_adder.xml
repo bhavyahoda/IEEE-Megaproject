@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/add_contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="214dp"
         android:layout_marginEnd="162dp"
@@ -21,13 +21,14 @@
 
     <Button
         android:id="@+id/Send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="266dp"
+        android:layout_height="100dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="145dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="276dp"
         android:text="Send"
+        android:background="@drawable/help_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

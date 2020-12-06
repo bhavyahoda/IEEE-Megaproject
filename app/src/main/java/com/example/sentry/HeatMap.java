@@ -52,34 +52,33 @@ import java.util.Scanner;
 
 public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, TaskLoadedCallback {
     private GoogleMap mMap;
-    Button getDirection,swapper;
+    Button getDirection, swapper;
     private Polyline currentPolyline;
     TileOverlay overlay;
-    int flag=0;
-    EditText where_place,to_place;
-    LatLng latLng,latLng2;
+    int flag = 0;
+    EditText where_place, to_place;
+    LatLng latLng, latLng2;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heat_map);
         getDirection = findViewById(R.id.btnGetDirection);
-        swapper=findViewById(R.id.Swapper);
-        flag =0;
+        swapper = findViewById(R.id.Swapper);
+        flag = 0;
         swapper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(flag == 0){
+                if (flag == 0) {
                     flag = 1;
                     addHeatMap();
-                }
-                else{
-                    flag=0;
+                } else {
+                    flag = 0;
                     overlay.remove();
                 }
             }
         });
-        where_place =findViewById(R.id.From);
-        to_place=findViewById(R.id.To);
+        where_place = findViewById(R.id.From);
+        to_place = findViewById(R.id.To);
         Places.initialize(getApplicationContext(), getResources().getString(R.string.map_key));
         where_place.setFocusable(false);
         where_place.setOnClickListener(new View.OnClickListener() {
@@ -88,7 +87,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                 //Initialize places field list
                 //zet the field to specify which type of place data to return after the user has made decision
                 List<Place.Field> fieldList = Arrays.asList(Place.Field.ADDRESS,
-                        Place.Field.LAT_LNG, Place.Field.NAME);
+                                              Place.Field.LAT_LNG, Place.Field.NAME);
 
                 //create autocomplete intent
 
@@ -106,7 +105,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                 //Initialize places field list
                 //zet the field to specify which type of place data to return after the user has made decision
                 List<Place.Field> fieldList = Arrays.asList(Place.Field.ADDRESS,
-                        Place.Field.LAT_LNG, Place.Field.NAME);
+                                              Place.Field.LAT_LNG, Place.Field.NAME);
 
                 //create autocomplete intent
 
@@ -168,11 +167,11 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                         mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng2));
                     }
                 }
-                new FetchURL(HeatMap.this).execute(getUrl(latLng,latLng2, "driving"), "driving");
+                new FetchURL(HeatMap.this).execute(getUrl(latLng, latLng2, "driving"), "driving");
             }
         });
         MapFragment mapFragment = (MapFragment) getFragmentManager()
-                .findFragmentById(R.id.mapNearBy);
+                                  .findFragmentById(R.id.mapNearBy);
         mapFragment.getMapAsync(this);
     }
     @Override
@@ -225,7 +224,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
         // Output format
         String output = "json";
         // Building the url to the web service
-        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "your api key";
+        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + parameters + "&key=YOUR API KEY";
         return url;
     }
 
@@ -239,21 +238,21 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
             Toast.makeText(getApplicationContext(), "Problem reading list of locations.", Toast.LENGTH_LONG).show();
         }
         int[] colors = {
-                Color.rgb(102, 225, 0), // green
-                Color.rgb(255, 0, 0)    // red
+            Color.rgb(102, 225, 0), // green
+            Color.rgb(255, 0, 0)    // red
         };
 
         float[] startPoints = {
-                0.001f, 0.01f
+            0.001f, 0.01f
         };
 
         Gradient gradient = new Gradient(colors, startPoints);
 
         // Create a heat map tile provider, passing it the latlngs of the police stations.
         HeatmapTileProvider provider = new HeatmapTileProvider.Builder()
-                .weightedData(latLngs)
-                .gradient(gradient)
-                .build();
+        .weightedData(latLngs)
+        .gradient(gradient)
+        .build();
 
         // Add a tile overlay to the map, using the heat map tile provider.
         overlay = mMap.addTileOverlay(new TileOverlayOptions().tileProvider(provider));
@@ -268,7 +267,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
             double lat = object.getDouble("Latitude");
             double lng = object.getDouble("Longitude");
             double offence_description = object.getDouble("Offence Description");
-            result.add(new WeightedLatLng(new LatLng(lat, lng),offence_description));
+            result.add(new WeightedLatLng(new LatLng(lat, lng), offence_description));
         }
         return result;
     }
