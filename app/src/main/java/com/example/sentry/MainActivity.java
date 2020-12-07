@@ -1,6 +1,7 @@
 package com.example.sentry;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -14,7 +15,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button login,register;
-    private static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
+    private static final int  MY_PERMISSIONS_REQUEST_LOCATION=99;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.login);
         register = findViewById(R.id.Register);
         if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.SEND_SMS)
+                Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.SEND_SMS)) {
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
             } else {
                 ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.SEND_SMS},
-                        MY_PERMISSIONS_REQUEST_SEND_SMS);
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                        MY_PERMISSIONS_REQUEST_LOCATION);
             }
         }
         login.setOnClickListener(new View.OnClickListener() {

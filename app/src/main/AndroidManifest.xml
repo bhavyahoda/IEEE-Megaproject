@@ -54,13 +54,15 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="Your API KEY" />
+            android:value="YOUR API KEY HERE" />
 
         <activity android:name=".HeatMap" />
         <activity android:name=".Dashboard" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
