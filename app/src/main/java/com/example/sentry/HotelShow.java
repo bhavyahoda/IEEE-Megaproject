@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,6 +24,7 @@ import com.google.firebase.firestore.Query;
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
+    String click_link;
     String Tag = "i am in";
 
 
@@ -50,7 +53,16 @@ import com.google.firebase.firestore.Query;
             protected void onBindViewHolder(@NonNull HotelShow.HotelsViewHolder holder, int position, @NonNull Hotel model) {
                 holder.ho_name.setText(model.getName());
                 holder.ho_city_details.setText(model.getLocationDetail());
-                holder.ho_loc_link.setText(model.getLocationLink());
+                holder.ho_loc_link.setText("click to see the exact location of link");
+                click_link=model.getLocationLink();
+                Log.v(Tag,"the link is"+click_link);
+                holder.ho_loc_link.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse(click_link));
+                        startActivity(in);
+                    }
+                });
                 holder.ho_min_price.setText(model.getMinimumPrice());
                 holder.ho_rating.setText(model.getRating());
                 holder.ho_feature.setText(model.getFeatureDetail());

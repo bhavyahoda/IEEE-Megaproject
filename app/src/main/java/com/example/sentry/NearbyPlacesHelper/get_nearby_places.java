@@ -43,7 +43,7 @@ public class get_nearby_places  extends AsyncTask<Object,String,String> {
     private ImageView ic;
     private CardView cardView;
 
-    public get_nearby_places(Context context, TextView tv,TextView open_now_marker,TextView ratingMarker,TextView VicMarker,ImageView icon,ImageView pic_place,CardView card_view) {
+    public get_nearby_places(Context context, TextView tv,TextView open_now_marker,TextView ratingMarker,TextView VicMarker,ImageView icon,CardView card_view) {
         mContext = context;
         textMarker = tv;
         open_now = open_now_marker;
@@ -154,11 +154,11 @@ public class get_nearby_places  extends AsyncTask<Object,String,String> {
                     if(open.equals("true"))
                     {
                         Log.v(TAG,"open now");
-                        open_now.setText("open now");
+                        open_now.setText("OPEN NOW");
                     }
                     else {
                         Log.v(TAG,"close");
-                        open_now.setText("closed now");
+                        open_now.setText("CLOSED NOW");
                     }
                     Log.v(TAG,"the icon is::"+icon);
 

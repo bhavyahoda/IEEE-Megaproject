@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,6 +25,7 @@ public class SeeAnonymousTip extends AppCompatActivity {
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
+    String click_link;
     String Tag = "i am in";
 
     @Override
@@ -46,7 +49,16 @@ public class SeeAnonymousTip extends AppCompatActivity {
             }
             @Override
             protected void onBindViewHolder(@NonNull SeeAnonymousTip.TipViewHolder holder, int position, @NonNull AnonymousTip model) {
-                holder.tip_loc.setText(model.getTipLocation());
+                holder.tip_loc.setText("click to show the location of the victim");
+                click_link=model.getTipLocation();
+                Log.v(Tag,"the link is"+click_link);
+                holder.tip_loc.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse(click_link));
+                        startActivity(in);
+                    }
+                });
                 holder.tip_sub.setText(model.getTipTopic());
                 holder.tip_description.setText(model.getTipDescription());
                 Log.v(Tag,"entering view holder ");

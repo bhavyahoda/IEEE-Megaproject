@@ -29,6 +29,8 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:text="TextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="30sp"
@@ -41,8 +43,10 @@
 
     <TextView
         android:id="@+id/Descrip"
-        android:layout_width="400dp"
-        android:layout_height="520dp"
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:gravity="fill_vertical"
         android:maxLines="5000000"
         android:scrollbars="vertical"
@@ -54,5 +58,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_image"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintVertical_bias="0.407" />
 </androidx.constraintlayout.widget.ConstraintLayout>

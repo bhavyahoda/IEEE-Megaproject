@@ -238,7 +238,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				String hospital = "hospital";
 				String url = getUrl(latitude, longitude, hospital);
 				Object dataTransfer[] = new Object[3];
-				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, cardView);
 				//creating an object which is storing two objects the map and the url
 				dataTransfer[0] = mMap;
 				dataTransfer[1] = url;
@@ -257,7 +257,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				String fireStation = "fire_station";
 				String url = getUrl(latitude, longitude, fireStation);
 				Object dataTransfer[] = new Object[3];
-				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, cardView);
 				dataTransfer[0] = mMap;
 				dataTransfer[1] = url;
 				dataTransfer[2] = fireStation;
@@ -274,7 +274,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				String policeStation = "police";
 				String url = getUrl(latitude, longitude, policeStation);
 				Object dataTransfer[] = new Object[3];
-				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, pic_place, cardView);
+				get_nearby_places gns = new get_nearby_places(getApplicationContext(), tv, open_now_marker, ratingMarker, VicMarker, icon, cardView);
 				dataTransfer[0] = mMap;
 				dataTransfer[1] = url;
 				dataTransfer[2] = policeStation;

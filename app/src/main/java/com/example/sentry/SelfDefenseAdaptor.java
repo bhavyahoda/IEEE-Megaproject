@@ -42,12 +42,13 @@ public class SelfDefenseAdaptor extends RecyclerView.Adapter<SelfDefenseAdaptor.
         return new MyViewHolder(view);
     }
 
-    //references passed from on create to here where the objects are created data is feaded here
+    //references passed from on create to here where the objects are created data is stored here
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.vid_title.setText(info1[position]);
         holder.vid_description.setText(info2[position]);
-        holder.vid_link.setText("Click It");
+        holder.vid_description.setMovementMethod(new ScrollingMovementMethod());
+        holder.vid_link.setText("CLICK TO SEE");
         holder.self_vid_image.setImageResource(photo[position]);
         holder.vid_link.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +74,6 @@ public class SelfDefenseAdaptor extends RecyclerView.Adapter<SelfDefenseAdaptor.
             super(itemView);
             vid_title=itemView.findViewById(R.id.vid_title);
             vid_description=itemView.findViewById(R.id.vid_description);
-            vid_description.setMovementMethod(new ScrollingMovementMethod());
             vid_link=itemView.findViewById(R.id.self_vid_link);
             //vid_link.setMovementMethod(LinkMovementMethod.getInstance());
             self_vid_image=itemView.findViewById(R.id.self_vid_image);

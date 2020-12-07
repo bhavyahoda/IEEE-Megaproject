@@ -20,6 +20,7 @@ public class HotelDetailPresent extends AppCompatActivity {
     TextView name,description,rating,price,link,phoneNumber,location;
     String Tag="i am getting the data";
     String data1,data2,data3,data4,data5,data6,data8;
+    private boolean isClickingLink = false;
     int myImageView;
     Context context;
 
@@ -39,6 +40,15 @@ public class HotelDetailPresent extends AppCompatActivity {
 
         getData();
         setData();
+        //Log.v(Tag,"the linkkkkkkkk!!!!!!"+data5);
+       link.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent in = new Intent(Intent.ACTION_VIEW,Uri.parse(data5));
+               startActivity(in);
+               
+           }
+       });
     }
     private void getData() {
         Log.v(Tag, "i am entering get data");
@@ -47,7 +57,7 @@ public class HotelDetailPresent extends AppCompatActivity {
                 && getIntent().hasExtra("data4") && getIntent().hasExtra("data5") && getIntent().hasExtra("data6") && getIntent().hasExtra("data8")) {
 
             data1 = getIntent().getStringExtra("data1");
-            Log.v(Tag, "i am there" + data1);
+            //Log.v(Tag, "i am there" + data1);
             data2 = getIntent().getStringExtra("data2");
             data3 = getIntent().getStringExtra("data3");
             data4 = getIntent().getStringExtra("data4");
@@ -56,13 +66,28 @@ public class HotelDetailPresent extends AppCompatActivity {
             data8 = getIntent().getStringExtra("data8");
             //data2 = getIntent().getStringExtra("data2");
             myImageView = getIntent().getIntExtra("myImageView", 1);
-            Log.v(Tag, "i am getting image");
+            //Log.v(Tag, "i am getting image");
 
         } else {
             Toast.makeText(this, "NO INFORMATION AVAILABLE", Toast.LENGTH_SHORT).show();
 
         }
     }
+       /* link.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if (!isClickingLink) {
+                Log.w("log", "not clicking link");
+            }
+            else {
+                Log.v(Tag, "I am entering the on click");
+                Intent browseIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(data5));
+                startActivity(browseIntent);
+                Log.v(Tag, data5);
+            }
+        }
+    });*/
+
     private void setData()
     {
         name.setText(data1);
@@ -71,15 +96,8 @@ public class HotelDetailPresent extends AppCompatActivity {
         rating.setText(data2);
         price.setText(data3);
         link.setText("Click to see more details");
-        link.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browseIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(data5));
-                context.startActivity(browseIntent);
-                Log.v(Tag, data5);
-            }
-        });
-        link.setMovementMethod(LinkMovementMethod.getInstance());
+        Log.v(Tag,"the link is:"+data5);
+        //link.setMovementMethod(LinkMovementMethod.getInstance());
         location.setText(data4);
         phoneNumber.setText(data8);
         main_img.setImageResource(myImageView);

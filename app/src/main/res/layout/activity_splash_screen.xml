@@ -5,24 +5,29 @@
         android:layout_height="match_parent"
         tools:context=".SplashScreenActivity">
 
-        <ImageView
-            android:id="@+id/imageViewLogo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerInParent="true"
-            android:contentDescription="@null"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="398dp"
+        android:layout_height="274dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageViewLogo"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:textColor="@android:color/white"
-            android:text="@string/app_name"
-            android:textSize="27sp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="84dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Sentry"
+        android:textAlignment="center"
+        android:textColor="#5FAFDD"
+        android:textSize="65sp"
+        android:textStyle="bold"/>
+
 
 </RelativeLayout>

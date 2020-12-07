@@ -10,4 +10,5 @@
     <color name="colorPrimaryDark">#5fafdd</color>
     <color name="light_blue">#FF34aeeb</color>
     <color name="tur_blue">#FF43e0e6</color>
+    <color name="red">#FFFF0000</color>
 </resources>

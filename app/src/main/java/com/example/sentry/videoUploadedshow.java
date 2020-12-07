@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,6 +26,7 @@ public class VideoUploadedshow extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
     String Tag = "i am in";
+    String click_link;
     TextView video_name;
     TextView video_qualification;
     TextView video_fees;
@@ -62,7 +65,16 @@ public class VideoUploadedshow extends AppCompatActivity {
                     holder.vi_fees.setText(model.getPrice());
                     holder.vi_topic.setText(model.getTopic());
                     holder.vi_time.setText(model.getTime());
-                    holder.vi_link.setText(model.getLink());
+                    holder.vi_link.setText("click to get to the class!");
+                    click_link=model.getLink();
+                    Log.v(Tag,"the link is"+click_link);
+                    holder.vi_link.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent in = new Intent(Intent.ACTION_VIEW,Uri.parse(click_link));
+                            startActivity(in);
+                        }
+                    });
                     holder.vi_reason_to_attend.setText(model.getReason());
                     Log.v(Tag,"entering view holder ");
                 }
@@ -72,7 +84,6 @@ public class VideoUploadedshow extends AppCompatActivity {
             mFirestoreList.setAdapter(adapter);
 
         }
-
         private class VideosViewHolder extends RecyclerView.ViewHolder{
             private TextView vi_name;
             private TextView vi_qualification;
@@ -101,6 +112,7 @@ public class VideoUploadedshow extends AppCompatActivity {
                 push.setReason(vi_reason_to_attend.getText().toString());
             }
         }
+
 
         @Override
         protected void onStop() {

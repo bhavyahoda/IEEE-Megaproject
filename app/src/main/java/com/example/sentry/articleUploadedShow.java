@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,11 +26,7 @@ public class ArticleUploadedShow extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
     String Tag = "i am in";
-    TextView article_name;
-    TextView article_email;
-    TextView article_title;
-    TextView article_brief;
-    TextView article_link;
+    String click_link;
     //Article push;
 
     @Override
@@ -55,7 +53,16 @@ public class ArticleUploadedShow extends AppCompatActivity {
                     holder.article_email.setText(model.getEmail()+"");
                     holder.article_title.setText(model.getTitle());
                     holder.article_brief.setText(model.getDescription());
-                    holder.article_link.setText(model.getArticle_Link());
+                    holder.article_link.setText("click to read the whole article");
+                    click_link=model.getArticle_Link();
+                    Log.v(Tag,"the link is"+click_link);
+                    holder.article_link.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                        Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse(click_link));
+                                        startActivity(in);
+                                    }
+                            });
                 Log.v(Tag,"entering view holder ");
             }
         };

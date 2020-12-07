@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,6 +24,7 @@ public class SelfDefenseShow extends AppCompatActivity {
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
+    String click_link;
     String Tag = "i am in";
 
     @Override
@@ -50,7 +53,16 @@ public class SelfDefenseShow extends AppCompatActivity {
                 holder.sd_about.setText(model.getAbout());
                 holder.sd_reference.setText(model.getWork());
                 holder.sd_number.setText(model.getPhone());
-                holder.sd_loc_link.setText(model.getLink());
+                holder.sd_loc_link.setText("click to get the link for google class/google maps for location");
+                click_link=model.getLink();
+                Log.v(Tag,"the link is"+click_link);
+                holder.sd_loc_link.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse(click_link));
+                        startActivity(in);
+                    }
+                });
                 holder.sd_date.setText(model.getDate());
                 holder.sd_fees.setText(model.getPrice());
                 Log.v(Tag,"entering view holder ");

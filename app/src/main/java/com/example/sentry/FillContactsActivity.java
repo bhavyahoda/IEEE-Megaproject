@@ -3,9 +3,11 @@ package com.example.sentry;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.sentry.model.Contact;
 import com.google.firebase.auth.FirebaseAuth;
@@ -41,23 +43,67 @@ public class FillContactsActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DocumentReference documentReference = data_storage.collection("contacts").document(userID);
-                push=new Contact();
-                set_data();
-                documentReference.set(push);
-                contact1_name.setText("");
-                contact1_number.setText("");
-                contact2_name.setText("");
-                contact2_number.setText("");
-                contact3_name.setText("");
-                contact3_number.setText("");
-                contact4_name.setText("");
-                contact4_number.setText("");
-                contact5_name.setText("");
-                contact5_number.setText("");
-                finish();
+                contact_adder();
             }
         });
+    }
+    private void contact_adder(){
+        DocumentReference documentReference = data_storage.collection("contacts").document(userID);
+        push=new Contact();
+        set_data();
+        documentReference.set(push);
+        // Validations for input email and password
+        if (TextUtils.isEmpty(contact1_name.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 1st contact name!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact1_number.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 1st contact number!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact2_name.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 2nd contact name!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact2_number.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 2nd contact number!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact3_name.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 3rd contact name!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact3_number.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 3rd contact number!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact4_name.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 4th contact name!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact4_number.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 4th contact number!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact5_name.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 5th contact name!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (TextUtils.isEmpty(contact5_number.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Please enter 5th contact number!!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        contact1_name.setText("");
+        contact1_number.setText("");
+        contact2_name.setText("");
+        contact2_number.setText("");
+        contact3_name.setText("");
+        contact3_number.setText("");
+        contact4_name.setText("");
+        contact4_number.setText("");
+        contact5_name.setText("");
+        contact5_number.setText("");
+        finish();
     }
     public void set_data(){
         push.setName1(contact1_name.getText().toString());
