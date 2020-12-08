@@ -1,8 +1,6 @@
 # Sentry: 
 
-1. Right now as a team of three we are committing sub parts of our project, which will be later on integrated with the final layout in the last week.
-
-2. The API key has not been provided by us, if you want to use the project then clone it and then generate your own api key and use it. 
+The API key has not been provided by us, if you want to use the project then clone it and then generate your own api key and use it. 
 
   This app aims towards providing users help maintaing their **safety and security**. It tries to deal with the issue of unsafe travelling by providing routes so that the user can choose the safest one, deal with any emergency situation a user might have by sending their location information to added contacts, not knowing about the nearest emergency locations like police stations, hospitals and fire stations. It also provides the users with information about different IPC sections of the constitution because sometimes many people do not even know that they were a victim of some crime. With the information provided by the app atleast people will be aware to avoid any such situation or take action against it. Also provides information about self defence classes, articles for counselling, videos for counselling, hotel information. Thus, making people more aware of the safety issues and also information to take action against it.
 
