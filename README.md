@@ -2,8 +2,7 @@
 
 1. Right now as a team of three we are committing sub parts of our project, which will be later on integrated with the final layout in the last week.
 
-2. The API key has not been provided by us, if you want to use the project then clone it and then generate your own api key and use it.
-
+2. The API key has not been provided by us, if you want to use the project then clone it and then generate your own api key and use it. 
 
   This app aims towards providing users help maintaing their **safety and security**. It tries to deal with the issue of unsafe travelling by providing routes so that the user can choose the safest one, deal with any emergency situation a user might have by sending their location information to added contacts, not knowing about the nearest emergency locations like police stations, hospitals and fire stations. It also provides the users with information about different IPC sections of the constitution because sometimes many people do not even know that they were a victim of some crime. With the information provided by the app atleast people will be aware to avoid any such situation or take action against it. Also provides information about self defence classes, articles for counselling, videos for counselling, hotel information. Thus, making people more aware of the safety issues and also information to take action against it.
 
@@ -18,6 +17,42 @@
 </ol>
 
 ## The App:
+<img src="https://user-images.githubusercontent.com/54111579/101481644-80d2ee80-397b-11eb-8252-517036dc66e9.jpeg" width="150px"/> <img src="https://user-images.githubusercontent.com/54111579/101481656-84ff0c00-397b-11eb-9071-1966dc3e1116.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101481667-87616600-397b-11eb-8782-6758d8f70ff3.jpeg" width="150px"/>
+
+<img src="https://user-images.githubusercontent.com/54111579/101481681-8c261a00-397b-11eb-8509-a59c66b2b9bb.jpeg" width="150px"/>
+
+<img src="https://user-images.githubusercontent.com/54111579/101481690-90523780-397b-11eb-9aae-96d25f7b9d24.jpeg" width="150px"/> <img src="https://user-images.githubusercontent.com/54111579/101481705-97794580-397b-11eb-9ddb-1fbee43f3cfb.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101481717-9ba56300-397b-11eb-93ab-9c01650fabb4.jpeg" width="150px"/>
+
+<img src="https://user-images.githubusercontent.com/54111579/101481732-a4963480-397b-11eb-9d07-1a68578d39c6.jpeg" width="150px"/> <img src="https://user-images.githubusercontent.com/54111579/101482540-e07dc980-397c-11eb-9c80-fc393dc17a38.jpeg" width="150px"/>
+
+<img src="https://user-images.githubusercontent.com/54111579/101482631-02774c00-397d-11eb-924c-2b95d943b630.jpeg" width="150px"/> <img src="https://user-images.githubusercontent.com/54111579/101482635-04d9a600-397d-11eb-9058-3dd5baa7ebd6.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101482642-073c0000-397d-11eb-86b9-bf87b71ec4f2.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101482648-099e5a00-397d-11eb-84d5-a083d464e520.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101482654-0b681d80-397d-11eb-8e34-9ebe3379eff9.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101482663-0d31e100-397d-11eb-9c36-fe8b6c9e0362.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101482677-11f69500-397d-11eb-9f93-585f3009eeff.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101483643-7e25c880-397e-11eb-8975-977715c8cbf3.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101483649-7fef8c00-397e-11eb-99dd-c213db4a76c4.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101483659-82ea7c80-397e-11eb-9d47-3dd62f95be7f.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101483699-8f6ed500-397e-11eb-96b5-ee5d0e2917c5.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101483732-9990d380-397e-11eb-8642-90f9649b4aa6.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484209-42d7c980-397f-11eb-8b5e-0039d10f724c.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484202-410e0600-397f-11eb-912a-6297d9e9838b.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484215-453a2380-397f-11eb-84d2-a34ba417f080.jpeg" width="150px"/>
+
+<img src="https://user-images.githubusercontent.com/54111579/101484405-94805400-397f-11eb-9728-143d69dbeeb3.jpeg" width="150px"/> <img src="https://user-images.githubusercontent.com/54111579/101484442-a5c96080-397f-11eb-8b40-76e64c3a494f.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484488-b7ab0380-397f-11eb-9cf2-0046736f7708.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484533-c8f41000-397f-11eb-8b9f-3509ebdbf6c9.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484575-dad5b300-397f-11eb-8edf-7e491d67375e.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484583-dc9f7680-397f-11eb-822c-a49fad896935.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484619-ecb75600-397f-11eb-8aeb-c4c0b9157d9c.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484704-0a84bb00-3980-11eb-95ac-737354355289.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484713-0d7fab80-3980-11eb-9441-48d2fe59edfe.jpeg" width="150px"/>
+<img src="https://user-images.githubusercontent.com/54111579/101484721-11133280-3980-11eb-8535-397edd06b86d.jpeg" width="150px"/>
+
+
 
 ## Different Activities in the app:
 
@@ -39,4 +74,3 @@
           <br/>**iii)** A self defence section which provides with information, links and locations of different self defence classes online and offline. Any user can even register his own class.
           <br/>**iv)** The section for counselling awareness provides with information about classes for counselling and also uploaded articles by different users or register for their own classes for counselling.
           <br/>**v)** The Anonymous tips section is a place for users to report any crime which they might have witnessed anonymously.
-
