@@ -10,6 +10,7 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textColor="#000000"
         tools:layout_editor_absoluteX="71dp"
         tools:layout_editor_absoluteY="43dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

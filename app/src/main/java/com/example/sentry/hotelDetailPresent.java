@@ -73,20 +73,6 @@ public class HotelDetailPresent extends AppCompatActivity {
 
         }
     }
-       /* link.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if (!isClickingLink) {
-                Log.w("log", "not clicking link");
-            }
-            else {
-                Log.v(Tag, "I am entering the on click");
-                Intent browseIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(data5));
-                startActivity(browseIntent);
-                Log.v(Tag, data5);
-            }
-        }
-    });*/
 
     private void setData()
     {
@@ -95,7 +81,7 @@ public class HotelDetailPresent extends AppCompatActivity {
         description.setMovementMethod(new ScrollingMovementMethod());
         rating.setText(data2);
         price.setText(data3);
-        link.setText("Click to see more details");
+        link.setText("CLICK FOR DETAILS!");
         Log.v(Tag,"the link is:"+data5);
         //link.setMovementMethod(LinkMovementMethod.getInstance());
         location.setText(data4);

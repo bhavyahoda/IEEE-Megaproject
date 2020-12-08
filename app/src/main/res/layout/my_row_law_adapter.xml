@@ -32,7 +32,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/law_img" />
-
+s
             <TextView
                 android:id="@+id/sec_code"
                 android:layout_width="146dp"
@@ -40,22 +40,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:text="SECTION 111"
+                android:fontFamily="monospace"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/law_img_1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/sec_heading"
-                android:layout_width="224dp"
-                android:layout_height="wrap_content"
+                android:layout_width="226dp"
+                android:layout_height="43dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="32dp"
                 android:text="Women rights"
-                android:textColor="@color/black"
-                android:textSize="15sp"
+                android:fontFamily="monospace"
+                android:textColor="#000000"
+                android:textSize="18sp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toEndOf="@+id/law_img_1"
                 app:layout_constraintTop_toBottomOf="@+id/sec_code" />
