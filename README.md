@@ -71,7 +71,7 @@ The API key has not been provided by us, if you want to use the project then clo
  6) **Nearby Places**: When this section is activated then it shows the user his/her current location with a marker. Now, the user can drag the marker to any other location and it will display a route from the user's current location with the help of a polyline and also the duration of travel. The app adds markers to location having hospitals, police stations, fire stations in 5 kilometer radius of your current location as per the user's choice. When the user clicks any of the marker then he/ she is also provided the information about the particular place and its rating in a card view.
  
 7) **Information Section**: This section provides information for the users so that either they can be safe or take action if a crime has been committed.
-          <br/>**i)** The law info section consists of various IPC sections focussed on crime and criminal section so that the users are well informed.
+          <br/>**i)** The law info section consists of various IPC sections focussed on crime and criminal activity so that the users are well informed.
           <br/>**ii)** The hotel info activity consists of various hotels and the ratings of each hotel. Anyone can even register their own hotel.
           <br/>**iii)** A self defence section which provides with information, links and locations of different self defence classes online and offline. Any user can even register his own class.
           <br/>**iv)** The section for counselling awareness provides with information about classes for counselling and also uploaded articles by different users or register for their own classes for counselling.
