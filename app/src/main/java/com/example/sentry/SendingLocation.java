@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,6 +32,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -43,6 +46,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.local.QueryEngine;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
 
 public class SendingLocation extends FragmentActivity implements OnMapReadyCallback,
 	GoogleApiClient.ConnectionCallbacks,
@@ -136,7 +143,6 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		MarkerOptions markerOptions = new MarkerOptions();
 		//set properties to the marker
 		markerOptions.position(lat_lang);
-
 		SmsManager sms = SmsManager.getDefault();
 		mAuth = FirebaseAuth.getInstance().getCurrentUser();
 		data_storage = FirebaseFirestore.getInstance();
@@ -146,7 +152,7 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 			@Override
 			public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException e) {
 				String lat_long="I AM IN A PROBLEM. GIVEN ARE MY CURRENT LOCATION COORDINATES, PLEASE COME AND HELP ME OUT!!!!!!!\n";
-				lat_long += String.valueOf(lat_lang.latitude).concat(" ").concat(String.valueOf(lat_lang.longitude));
+				lat_long += String.valueOf(lat_lang.latitude).concat(", ").concat(String.valueOf(lat_lang.longitude));
 				if(value.getString("number5")!=null) {
 					sms.sendTextMessage(value.getString("number5"), null, lat_long, null, null);
 				}
@@ -170,12 +176,18 @@ public class SendingLocation extends FragmentActivity implements OnMapReadyCallb
 		//current marker has been assigned the marker option declared above
 		curr_location = mMap.addMarker(markerOptions);
 
-		//camera specification moving camera to the current location of the user
 
-		mMap.moveCamera(CameraUpdateFactory.newLatLng(lat_lang));
-		mMap.animateCamera(CameraUpdateFactory.zoomBy(10));
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lat_lang, 15));
+		mMap.animateCamera(CameraUpdateFactory.zoomIn());
+		mMap.animateCamera(CameraUpdateFactory.zoomTo(12), 2000, null);
 
-		//stopping the updates after we get the current location of ourselves
+		CameraPosition cameraPosition = new CameraPosition.Builder()
+				.target(lat_lang)      // Sets the center of the map to Mountain View
+				.zoom(14)                   // Sets the zoom
+				.bearing(90)                // Sets the orientation of the camera to east
+				.tilt(0)                   // Sets the tilt of the camera to 30 degrees
+				.build();                   // Creates a CameraPosition from the builder
+		mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 		if (Client != null) {
 
 			LocationServices.FusedLocationApi.removeLocationUpdates(Client, this);

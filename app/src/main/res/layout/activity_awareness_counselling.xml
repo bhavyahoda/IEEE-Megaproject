@@ -72,7 +72,7 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/custom_button"
         android:fontFamily="monospace"
-        android:text="SEE UPDATED VIDEO"
+        android:text="SEE UPLOADED VIDEO"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"

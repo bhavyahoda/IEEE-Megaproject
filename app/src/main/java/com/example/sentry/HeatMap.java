@@ -24,6 +24,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -141,7 +142,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                         Address add = where_places.get(i);
                         latLng = new LatLng(add.getLatitude(), add.getLongitude());
                         mo.position(latLng);
-                        mo.title("You are here" + location);
+                        mo.title("You are here " + location);
                         mo.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
                         mMap.addMarker(mo);
                         //showing camera  focus on last result
@@ -149,7 +150,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                     }
                 }
                 if (!location2.equals("")) { //this means that user has entered something
-                    //now we use the geocoder class to get the latitude nad longitude of the entered text
+                    //now we use the geo-coder class to get the latitude nad longitude of the entered text
                     Geocoder geocoder = new Geocoder(HeatMap.this);
                     try {
                         to_places = geocoder.getFromLocationName(location2, 3);
@@ -161,7 +162,7 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
                         Address add = to_places.get(i);
                         latLng2 = new LatLng(add.getLatitude(), add.getLongitude());
                         mo.position(latLng2);
-                        mo.title("You want to go here" + location2);
+                        mo.title("You want to go here " + location2);
                         mo.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN));
                         mMap.addMarker(mo);
                         //showing camera  focus on last result
@@ -178,7 +179,19 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        Log.d("mylog", "Added Markers");
+        LatLng NYC = new LatLng(40.7128, -74.0060);
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(NYC, 15));
+        mMap.animateCamera(CameraUpdateFactory.zoomIn());
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(NYC)      // Sets the center of the map to Mountain View
+                .zoom(11)                   // Sets the zoom
+                .bearing(90)                // Sets the orientation of the camera to east
+                .tilt(0)                   // Sets the tilt of the camera to 30 degrees
+                .build();                   // Creates a CameraPosition from the builder
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -231,7 +244,6 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
 
     private void addHeatMap() {
         List<WeightedLatLng> latLngs = null;
-
         // Get the data: latitude/longitude positions of police stations.
         try {
             latLngs = readItems(R.raw.final_dataset_nyc);
@@ -248,18 +260,14 @@ public class HeatMap extends AppCompatActivity implements OnMapReadyCallback, Ta
         };
 
         Gradient gradient = new Gradient(colors, startPoints);
-
         // Create a heat map tile provider, passing it the latlngs of the police stations.
         HeatmapTileProvider provider = new HeatmapTileProvider.Builder()
                 .weightedData(latLngs)
                 .gradient(gradient)
                 .build();
-
         // Add a tile overlay to the map, using the heat map tile provider.
+        Toast.makeText(getApplicationContext(),"The Heat map has loaded",Toast.LENGTH_LONG).show();
         overlay = mMap.addTileOverlay(new TileOverlayOptions().tileProvider(provider));
-        LatLng lat_lang = new LatLng(40.7128,-74.0060);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(lat_lang));
-        mMap.animateCamera(CameraUpdateFactory.zoomBy(15f));
     }
     private List<WeightedLatLng> readItems(@RawRes int resource) throws JSONException {
         List<WeightedLatLng> result = new ArrayList<>();

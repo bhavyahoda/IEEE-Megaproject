@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,11 +53,25 @@ public class ArticleUploadedShow extends AppCompatActivity {
             }
             @Override
             protected void onBindViewHolder(@NonNull ArticlesViewHolder holder, int position, @NonNull Article model) {
-                    holder.article_name.setText(model.getName());
+                    holder.article_name.setText((model.getName()).toUpperCase());
+                    holder.article_name.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
+                    holder.article_name.setTextColor(Color.parseColor("#000000"));
+                    holder.article_name.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                     holder.article_email.setText(model.getEmail()+"");
+                    holder.article_email.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                    holder.article_email.setTextColor(Color.parseColor("#000000"));
                     holder.article_title.setText(model.getTitle());
+                    holder.article_title.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                    holder.article_title.setTextColor(Color.parseColor("#000000"));
+                    holder.article_title.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                     holder.article_brief.setText(model.getDescription());
-                    holder.article_link.setText("click to read the whole article");
+                    holder.article_brief.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                    holder.article_brief.setTextColor(Color.parseColor("#000000"));
+                    holder.article_link.setText(Html.fromHtml("<u>CLICK TO READ THE WHOLE ARTICLE!</u>"));
+                    holder.article_link.setTextColor(Color.parseColor("#00FFFF"));
+                    holder.article_link.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                    holder.article_link.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+               // holder.vid_link.setText(Html.fromHtml("<u>CLICK TO SEE!</u>"));
                     click_link=model.getArticle_Link();
                     Log.v(Tag,"the link is"+click_link);
                     holder.article_link.setOnClickListener(new View.OnClickListener() {

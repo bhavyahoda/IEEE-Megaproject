@@ -3,6 +3,7 @@ package com.example.sentry;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -48,7 +49,8 @@ public class SelfDefenseAdaptor extends RecyclerView.Adapter<SelfDefenseAdaptor.
         holder.vid_title.setText(info1[position]);
         holder.vid_description.setText(info2[position]);
         holder.vid_description.setMovementMethod(new ScrollingMovementMethod());
-        holder.vid_link.setText("CLICK TO SEE");
+        holder.vid_link.setText(Html.fromHtml("<u>CLICK TO SEE!</u>"));
+        //holder.vid_link.setText("CLICK TO SEE");
         holder.self_vid_image.setImageResource(photo[position]);
         holder.vid_link.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -81,7 +82,8 @@ public class HotelDetailPresent extends AppCompatActivity {
         description.setMovementMethod(new ScrollingMovementMethod());
         rating.setText(data2);
         price.setText(data3);
-        link.setText("CLICK FOR DETAILS!");
+        link.setText(Html.fromHtml("<u>CLICK FOR DETAILS!</u>"));
+        //link.setText("CLICK FOR DETAILS!");
         Log.v(Tag,"the link is:"+data5);
         //link.setMovementMethod(LinkMovementMethod.getInstance());
         location.setText(data4);

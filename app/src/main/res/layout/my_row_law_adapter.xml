@@ -24,8 +24,8 @@
 
             <ImageView
                 android:id="@+id/law_img_1"
-                android:layout_width="154dp"
-                android:layout_height="176dp"
+                android:layout_width="134dp"
+                android:layout_height="156dp"
                 android:layout_marginEnd="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/sec_code"
@@ -52,13 +52,13 @@ s
             <TextView
                 android:id="@+id/sec_heading"
                 android:layout_width="226dp"
-                android:layout_height="43dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="32dp"
                 android:text="Women rights"
                 android:fontFamily="monospace"
                 android:textColor="#000000"
-                android:textSize="18sp"
+                android:textSize="15sp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toEndOf="@+id/law_img_1"
                 app:layout_constraintTop_toBottomOf="@+id/sec_code" />

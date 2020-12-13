@@ -63,8 +63,8 @@ public class GetDirectionsData extends AsyncTask<Object,String,String> {
         MarkerOptions moo = new MarkerOptions();
         moo.position(latLng);
         moo.draggable(true);
-        moo.title(("duration="+duration));
-        moo.snippet("distance="+distance);
+        moo.title(("Duration= "+duration));
+        moo.snippet("Distance= "+distance);
 
         mMap.addMarker(moo);
 

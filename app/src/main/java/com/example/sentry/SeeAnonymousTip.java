@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +29,6 @@ public class SeeAnonymousTip extends AppCompatActivity {
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
-    String click_link;
     String Tag = "i am in";
 
     @Override
@@ -49,18 +52,17 @@ public class SeeAnonymousTip extends AppCompatActivity {
             }
             @Override
             protected void onBindViewHolder(@NonNull SeeAnonymousTip.TipViewHolder holder, int position, @NonNull AnonymousTip model) {
-                holder.tip_loc.setText("click to show the location of the victim");
-                click_link=model.getTipLocation();
-                Log.v(Tag,"the link is"+click_link);
-                holder.tip_loc.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent in = new Intent(Intent.ACTION_VIEW, Uri.parse(click_link));
-                        startActivity(in);
-                    }
-                });
-                holder.tip_sub.setText(model.getTipTopic());
+                holder.tip_loc.setText((model.getTipLocation()).toUpperCase());
+                holder.tip_loc.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
+                holder.tip_loc.setTextColor(Color.parseColor("#000000"));
+                holder.tip_loc.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+                holder.tip_sub.setText((model.getTipTopic()).toUpperCase());
+                holder.tip_sub.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
+                holder.tip_sub.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+                holder.tip_sub.setTextColor(Color.parseColor("#000000"));
                 holder.tip_description.setText(model.getTipDescription());
+                holder.tip_description.setTextSize(TypedValue.COMPLEX_UNIT_SP,25f);
+                holder.tip_description.setTextColor(Color.parseColor("#000000"));
                 Log.v(Tag,"entering view holder ");
             }
         };

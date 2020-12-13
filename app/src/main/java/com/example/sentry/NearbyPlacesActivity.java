@@ -38,6 +38,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -196,11 +197,9 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 			@Override
 			public void onClick(View v) {
 				mMap.clear();
-				Log.v(TAG, "entering the button");
 				//take the text the user had entered
 				//converting the text into string
 				String location = loc_name.getText().toString();
-				Log.v(TAG, "the search button" + location);
 				//storing the results in a list
 				List<Address> searched_places = null;
 				MarkerOptions mo = new MarkerOptions();
@@ -210,7 +209,6 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 					Geocoder geocoder = new Geocoder(getApplicationContext());
 					try {
 						searched_places = geocoder.getFromLocationName(location, 5);
-						Log.v(TAG, "entering the searched button" + searched_places.size());
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
@@ -219,9 +217,8 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 					for (int i = 0; i < searched_places.size(); i++) {
 						Address add = searched_places.get(i);
 						LatLng latLng = new LatLng(add.getLatitude(), add.getLongitude());
-						Log.v(TAG, "entering the searched button" + latLng);
 						mo.position(latLng);
-						mo.title("you searched for " + location);
+						mo.title("You Searched For " + location);
 						mo.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 						mMap.addMarker(mo);
 						//showing camera  focus on last result
@@ -245,7 +242,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				dataTransfer[2] = hospital;
 				//here the execute will call the nearby places api server and execute the methods to show the data performed on our request
 				gns.execute(dataTransfer);
-				Toast.makeText(getApplicationContext(), "showing nearby hospitals", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
 			}
 		});
 
@@ -262,7 +259,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				dataTransfer[1] = url;
 				dataTransfer[2] = fireStation;
 				gns.execute(dataTransfer);
-				Toast.makeText(getApplicationContext(), "showing nearby fire stations", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Showing Nearby Fire Stations", Toast.LENGTH_LONG).show();
 
 			}
 		});
@@ -279,7 +276,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				dataTransfer[1] = url;
 				dataTransfer[2] = policeStation;
 				gns.execute(dataTransfer);
-				Toast.makeText(getApplicationContext(), "showing nearby police stations ", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Showing Nearby Police Stations ", Toast.LENGTH_LONG).show();
 			}
 		});
 
@@ -297,7 +294,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 				//passing the latitude and longitude value of the destination location
 				data_transfer[2] = new LatLng(end_latitude, end_longitude);
 				gdd.execute(data_transfer);
-				Toast.makeText(getApplicationContext(), "showing distance and duration between the current location and the destination", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Showing Distance and Duration Between The Current Location and The Destination", Toast.LENGTH_LONG).show();
 
 
 			}
@@ -362,7 +359,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 		MarkerOptions markerOptions = new MarkerOptions();
 		//set properties to the marker
 		markerOptions.position(lat_lang);
-		markerOptions.title(("you are here now"));
+		markerOptions.title(("You are here now."));
 		markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW));
 
 		//current marker has been assigned the marker option declared above
@@ -370,8 +367,20 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
 
 		//camera specification moving camera to the current location of the user
 
-		mMap.moveCamera(CameraUpdateFactory.newLatLng(lat_lang));
-		mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
+		curr_location = mMap.addMarker(markerOptions);
+
+
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lat_lang, 15));
+		mMap.animateCamera(CameraUpdateFactory.zoomIn());
+		mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+
+		CameraPosition cameraPosition = new CameraPosition.Builder()
+				.target(lat_lang)      // Sets the center of the map to Mountain View
+				.zoom(14)                   // Sets the zoom
+				.bearing(90)                // Sets the orientation of the camera to east
+				.tilt(0)                   // Sets the tilt of the camera to 30 degrees
+				.build();                   // Creates a CameraPosition from the builder
+		mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
 		//stopping the updates after i get the current location of myself
 		if (Client != null) {

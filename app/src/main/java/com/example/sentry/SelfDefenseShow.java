@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,10 +54,23 @@ public class SelfDefenseShow extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull SelfDefenseShow.SelfDefenseViewHolder holder, int position, @NonNull SelfDefense model) {
                 holder.sd_name.setText(model.getName());
+                holder.sd_name.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
+                holder.sd_name.setTextColor(Color.parseColor("#000000"));
+                holder.sd_name.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 holder.sd_about.setText(model.getAbout());
+                holder.sd_about.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                holder.sd_about.setTextColor(Color.parseColor("#000000"));
                 holder.sd_reference.setText(model.getWork());
+                holder.sd_reference.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                holder.sd_reference.setTextColor(Color.parseColor("#000000"));
                 holder.sd_number.setText(model.getPhone());
-                holder.sd_loc_link.setText("click to get the link for google class/google maps for location");
+                holder.sd_number.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.sd_number.setTextColor(Color.parseColor("#000000"));
+                holder.sd_number.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+                holder.sd_loc_link.setText(Html.fromHtml("<u>CLICK TO DIRECT YOURSELF TOWARDS THE CLASS</u>"));
+                holder.sd_loc_link.setTextColor(Color.parseColor("#00FFFF"));
+                holder.sd_loc_link.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                holder.sd_loc_link.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 click_link=model.getLink();
                 Log.v(Tag,"the link is"+click_link);
                 holder.sd_loc_link.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +81,13 @@ public class SelfDefenseShow extends AppCompatActivity {
                     }
                 });
                 holder.sd_date.setText(model.getDate());
+                holder.sd_date.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.sd_date.setTextColor(Color.parseColor("#000000"));
+                holder.sd_date.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 holder.sd_fees.setText(model.getPrice());
+                holder.sd_fees.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.sd_fees.setTextColor(Color.parseColor("#000000"));
+                holder.sd_fees.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 Log.v(Tag,"entering view holder ");
             }
         };

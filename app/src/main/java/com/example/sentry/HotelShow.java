@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,8 +56,16 @@ import com.google.firebase.firestore.Query;
             @Override
             protected void onBindViewHolder(@NonNull HotelShow.HotelsViewHolder holder, int position, @NonNull Hotel model) {
                 holder.ho_name.setText(model.getName());
+                holder.ho_name.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
+                holder.ho_name.setTextColor(Color.parseColor("#000000"));
+                holder.ho_name.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 holder.ho_city_details.setText(model.getLocationDetail());
-                holder.ho_loc_link.setText("click to see the exact location of link");
+                holder.ho_city_details.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                holder.ho_city_details.setTextColor(Color.parseColor("#000000"));
+                holder.ho_loc_link.setText(Html.fromHtml("<u>CLICK TO SEE THE LOCATION </u>"));
+                holder.ho_loc_link.setTextColor(Color.parseColor("#00FFFF"));
+                holder.ho_loc_link.setTextSize(TypedValue.COMPLEX_UNIT_SP,18f);
+                holder.ho_loc_link.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 click_link=model.getLocationLink();
                 Log.v(Tag,"the link is"+click_link);
                 holder.ho_loc_link.setOnClickListener(new View.OnClickListener() {
@@ -64,8 +76,16 @@ import com.google.firebase.firestore.Query;
                     }
                 });
                 holder.ho_min_price.setText(model.getMinimumPrice());
+                holder.ho_min_price.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.ho_min_price.setTextColor(Color.parseColor("#000000"));
+                holder.ho_min_price.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 holder.ho_rating.setText(model.getRating());
+                holder.ho_rating.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.ho_rating.setTextColor(Color.parseColor("#000000"));
+                holder.ho_rating.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
                 holder.ho_feature.setText(model.getFeatureDetail());
+                holder.ho_feature.setTextSize(TypedValue.COMPLEX_UNIT_SP,20f);
+                holder.ho_feature.setTextColor(Color.parseColor("#000000"));
                 Log.v(Tag,"entering view holder ");
             }
         };
