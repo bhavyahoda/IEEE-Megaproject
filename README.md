@@ -2,8 +2,7 @@
 
 The API key has not been provided by us, if you want to use the project then clone it and then generate your own api key and use it. 
 
-  This app aims towards providing users help maintaing their **safety and security**. It tries to deal with the issue of unsafe travelling by providing routes so that the user can choose the safest one, deal with any emergency situation a user might have by sending their location information to added contacts, not knowing about the nearest emergency locations like police stations, hospitals and fire stations. It also provides the users with information about different IPC sections of the constitution because sometimes many people do not even know that they were a victim of some crime. With the information provided by the app atleast people will be aware to avoid any such situation or take action against it. Also provides information about self defence classes, articles for counselling, videos for counselling, hotel information. Thus, making people more aware of the safety issues and also information to take action against it.
-
+  This app aims towards providing users help maintaing their **safety and security**. It tries to deal with the issue of unsafe travelling by providing routes via a heatmap so that the user can choose the safest route, deal with any emergency situation a user might have, by sending his/her location information to added contacts. The user gets an access to fire stations, hospitals and police stations within 5km of his/her current location along with their details. There is also an option to give anonymous tips regarding any crime that any individual may have witnessed. The app provides information about different IPC sections of the Indian Constitution so that the people can be well educated about the laws regarding their own safety. There is a section providing the details for Self Defense, Articles and Videos related to Physical, Mental health. Lastly, through the hotel information section we aim to help the victims of household crimes in seeking a temporary safe environment away from home.
 ## Technologies Used:
 
 <ol>
@@ -58,11 +57,11 @@ The API key has not been provided by us, if you want to use the project then clo
 
 ## Different Activities in the app:
 
- 1) **Main**: This is the first intent of the app which provides the user with two buttons login and register.
+ 1) **Main**: This is the first page of the app which provides the user with two buttons Login and Register.
  
  2) **Register**: This section takes the name, age, email, password and phone number from the user and uses email and password for authentication using FirebaseAuth. 
  
- 3) **Login**: In this section the user can login using the email and password with which the user had registered. Authentication done with FirebaseAuth class.
+ 3) **Login**: In this section the user can login using the email and password with which the user had registered. Authentication is done with FirebaseAuth class.
 
  4) **HeatMap**: This show a map with the graphical visualisation of data values represented by colour showing the different coordinates where crime took place in New York using the crime data set from <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243"><b><ins>data.cityofnewyork.us</ins></b></a>The user can also enter the source and destination and will be provided with all the different routes he/she can take. If the user is a resident of the New York City then he/she can decide which is the safest route to take. Routes shown using polylines and google maps direction API. A swapper button has also been provided with the help of which the user can add or remove the heatmap as per his/her wish. The user can also search for the origin and destination which provides autocomplete feature using google maps places API. 
  
