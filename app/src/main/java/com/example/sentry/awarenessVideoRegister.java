@@ -16,7 +16,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
-public class AwarenessVideoRegister extends AppCompatActivity {
+public class awarenessVideoRegister extends AppCompatActivity {
     private EditText nameTextView, qualificationTextView, topicTextView, timeTextView, linkTextView, reasonTextView,PriceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;

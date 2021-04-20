@@ -24,7 +24,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-public class ArticleUploadedShow extends AppCompatActivity {
+public class articleUploadedShow extends AppCompatActivity {
 
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;

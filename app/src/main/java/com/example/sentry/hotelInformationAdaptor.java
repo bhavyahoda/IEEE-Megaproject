@@ -57,7 +57,7 @@ public class hotelInformationAdaptor  extends RecyclerView.Adapter<hotelInformat
             @Override
             public void onClick(View v) {
                 Log.v(Tag,"i am entering button");
-                Intent intent =new Intent(context, HotelDetailPresent.class);
+                Intent intent =new Intent(context, hotelDetailPresent.class);
                 intent.putExtra("data1",data1[position]);
                 intent.putExtra("data2",data2[position]);
                 intent.putExtra("data3",data3[position]);

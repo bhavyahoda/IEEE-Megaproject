@@ -18,7 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 
 
-public class SelfDefenseForm extends AppCompatActivity {
+public class selfDefenseForm extends AppCompatActivity {
     private EditText nameTextView, AboutTextView, PhoneTextView, DateTextView, linkTextView,WorkTextView,priceTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;

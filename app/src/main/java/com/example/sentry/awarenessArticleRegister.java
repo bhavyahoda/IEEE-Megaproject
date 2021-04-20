@@ -18,7 +18,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
-public class AwarenessArticleRegister extends AppCompatActivity {
+public class awarenessArticleRegister extends AppCompatActivity {
     private EditText nameTextView, emailTextView, titleTextView, briefTextView, linkTextView;
     private FirebaseFirestore data_storage;
     FirebaseUser user;

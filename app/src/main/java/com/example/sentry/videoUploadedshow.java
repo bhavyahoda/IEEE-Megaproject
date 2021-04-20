@@ -24,7 +24,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-public class VideoUploadedshow extends AppCompatActivity {
+public class videoUploadedshow extends AppCompatActivity {
 
     private RecyclerView mFirestoreList;
     private FirebaseFirestore firebaseFirestore;
@@ -53,17 +53,17 @@ public class VideoUploadedshow extends AppCompatActivity {
                 .build();
 
 
-            adapter = new FirestoreRecyclerAdapter<Videos, VideoUploadedshow.VideosViewHolder>(options) {
+            adapter = new FirestoreRecyclerAdapter<Videos, videoUploadedshow.VideosViewHolder>(options) {
                 @NonNull
                 @Override
-                public VideoUploadedshow.VideosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                public videoUploadedshow.VideosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                     View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.video_uploaded_show_row,parent,false);
-                    return new VideoUploadedshow.VideosViewHolder(view);
+                    return new videoUploadedshow.VideosViewHolder(view);
 
                 }
 
                 @Override
-                protected void onBindViewHolder(@NonNull VideoUploadedshow.VideosViewHolder holder, int position, @NonNull Videos model) {
+                protected void onBindViewHolder(@NonNull videoUploadedshow.VideosViewHolder holder, int position, @NonNull Videos model) {
                     holder.vi_name.setText(model.getName());
                     holder.vi_name.setTextSize(TypedValue.COMPLEX_UNIT_SP,35f);
                     holder.vi_name.setTextColor(Color.parseColor("#000000"));

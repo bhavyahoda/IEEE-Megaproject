@@ -31,7 +31,7 @@ public class AwarenessCounselling extends AppCompatActivity {
         video_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), VideoUploadedshow.class);
+                Intent intent= new Intent(getApplicationContext(), videoUploadedshow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -39,7 +39,7 @@ public class AwarenessCounselling extends AppCompatActivity {
         video_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), AwarenessVideoRegister.class);
+                Intent intent= new Intent(getApplicationContext(), awarenessVideoRegister.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -47,7 +47,7 @@ public class AwarenessCounselling extends AppCompatActivity {
         article_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), ArticleUploadedShow.class);
+                Intent intent= new Intent(getApplicationContext(), articleUploadedShow.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
@@ -55,17 +55,11 @@ public class AwarenessCounselling extends AppCompatActivity {
         article_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), AwarenessArticleRegister.class);
+                Intent intent= new Intent(getApplicationContext(), awarenessArticleRegister.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
         });
-        /*delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                data_storage.collection("users").document(userId).delete();
-            }
-        });*/
     }
 
 }

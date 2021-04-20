@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HotelDetailPresent extends AppCompatActivity {
+public class hotelDetailPresent extends AppCompatActivity {
 
     ImageView main_img ;
     TextView name,description,rating,price,link,phoneNumber,location;

@@ -19,7 +19,7 @@ public class SelfDefense extends AppCompatActivity {
         sd_regis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), SelfDefenseForm.class);
+                Intent intent= new Intent(getApplicationContext(), selfDefenseForm.class);
                 //startActivityForResult(intent, SECOND_ACTIVITY_REQUEST_CODE)
                 startActivity(intent);
             }
